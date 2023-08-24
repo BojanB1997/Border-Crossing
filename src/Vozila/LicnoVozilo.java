@@ -7,8 +7,8 @@ public class LicnoVozilo extends Vozilo{
     Integer brojPutnika;
     Random random = new Random();
 
-    public LicnoVozilo(){
-        super();
+    public LicnoVozilo(Object[][] mapa){
+        super(mapa);
         brojPutnika = random.nextInt(5) + 1;
         this.setBrojPutnika(brojPutnika);
         this.setVrijemeProcesuiranja(500);

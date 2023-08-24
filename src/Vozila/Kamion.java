@@ -13,8 +13,8 @@ public class Kamion extends Vozilo{
     private float max = 11.5f;
     Integer brojPutnika;
 
-    public Kamion(){
-        super();
+    public Kamion(Object[][] mapa){
+        super(mapa);
         brojPutnika = random.nextInt(3) + 1;
         this.setBrojPutnika(brojPutnika);
         this.setVrijemeProcesuiranja(500);

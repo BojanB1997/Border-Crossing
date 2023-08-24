@@ -7,8 +7,8 @@ public class Autobus extends Vozilo{
     Random random = new Random();
     Integer brojPutnika;
 
-    public Autobus(){
-        super();
+    public Autobus(Object[][] mapa){
+        super(mapa);
         brojPutnika = random.nextInt(52) + 1;
         this.setBrojPutnika(brojPutnika);
         this.setVrijemeProcesuiranja(100);

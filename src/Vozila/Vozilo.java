@@ -8,9 +8,11 @@ public class Vozilo extends Thread{
     private Integer vrijemeProcesuiranja;
     private String oznaka;
     private String boja;
+    public Object[][] mapa;
 
-    public Vozilo(){
+    public Vozilo(Object[][] mapa){
         super();
+        this.mapa = mapa;
     }
 
     public void setBrojPutnika(Integer brojPutnika) {
@@ -66,6 +68,17 @@ public class Vozilo extends Thread{
 
     @Override
     public void run(){
-
+        while(getPozicijaURedu() < 49){
+            if(mapa[2][getPozicijaURedu() + 1] == null){
+                mapa[2][getPozicijaURedu() + 1] = getOznaka();
+                mapa[2][getPozicijaURedu()] = null;
+                setPozicijaURedu(getPozicijaURedu() + 1);
+                try {
+                    sleep(10);
+                }catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }

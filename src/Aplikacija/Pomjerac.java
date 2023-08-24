@@ -22,6 +22,9 @@ public class Pomjerac extends Thread{
     public Color bojaKamiona = Color.ROSYBROWN;
     public Color bojaAutobusa = Color.HOTPINK;
 
+    Integer counter = 0;
+    Integer i;
+
     public Pomjerac(ArrayList<Vozilo> listaVozila, GridPane centarGP, GridPane redGP, Object[][] mapa){
         super();
         this.listaVozila = listaVozila;
@@ -32,7 +35,6 @@ public class Pomjerac extends Thread{
 
     @Override
     public void run(){
-        Integer counter = 0;
         ObservableList<Node> getChildrenNodeC = centarGP.getChildren();
         ArrayList<Button> centerButtons = new ArrayList<Button>();
 
@@ -45,12 +47,15 @@ public class Pomjerac extends Thread{
         for(Node node : getChildrenNodeR){
             redButtons.add((Button)node);
         }
-        for(int i = listaVozila.size() - 1; i >= 0; i--, counter++){
+        for(i = listaVozila.size() - 1; i >= 0; i--, counter++){
             if(counter > 5){
 
             }
             else{
-                //Platform.runLater(centerButtons.get(4 - counter).setStyle("-fx-background-color: " + listaVozila.get(i).getBoja()));
+                Runnable updateColor = () -> {
+                    centerButtons.get(4 - counter).setStyle("-fx-background-color: " + listaVozila.get(i).getBoja());
+                };
+                Platform.runLater(updateColor);
             }
         }
     }
