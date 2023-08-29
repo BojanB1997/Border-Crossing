@@ -59,4 +59,9 @@ public class Kamion extends Vozilo{
     public Boolean getVecaStvarnaMasa() {
         return vecaStvarnaMasa;
     }
+
+    @Override
+    public String toString(){
+        return "Kamion - broj putnika: " + brojPutnika;
+    }
 }

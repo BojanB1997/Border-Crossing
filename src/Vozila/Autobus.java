@@ -15,4 +15,9 @@ public class Autobus extends Vozilo{
         this.setOznaka("A");
         this.setBoja("cadetblue");
     }
+
+    @Override
+    public String toString(){
+        return "Autobus - broj putnika: " + brojPutnika;
+    }
 }

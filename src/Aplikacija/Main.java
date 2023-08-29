@@ -129,9 +129,11 @@ public class Main extends Application {
         mainStage.show();
 
         startButton.setOnAction(e -> {
+            Simulacija simulacija = new Simulacija(centerGP, redGP);
             if(startCounter == 0) {
                 startButton.setText("STOP");
                 startCounter = 1;
+                simulacija.start();
             }
             else{
                 startButton.setText("START");

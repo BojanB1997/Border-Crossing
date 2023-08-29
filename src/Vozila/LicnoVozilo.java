@@ -15,4 +15,9 @@ public class LicnoVozilo extends Vozilo{
         this.setOznaka("LV");
         this.setBoja("tomato");
     }
+
+    @Override
+    public String toString(){
+        return "Licno vozilo - broj putnika: " + brojPutnika;
+    }
 }
