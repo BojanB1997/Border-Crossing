@@ -70,20 +70,19 @@ public class Vozilo extends Thread {
     public void run() {
 
         while (kreceSe) {
-            synchronized (mapa) {
-                if (getPozicijaURedu() < 49) {
+            if (getPozicijaURedu() < 49) {
+                synchronized (mapa) {
                     if (mapa[2][getPozicijaURedu() + 1] == null) {
                         mapa[2][getPozicijaURedu() + 1] = getOznaka();
                         mapa[2][getPozicijaURedu()] = null;
                         setPozicijaURedu(getPozicijaURedu() + 1);
                     }
-
-                    try {
-                        sleep(30);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
                 }
+            }
+            try {
+                sleep(40);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }
