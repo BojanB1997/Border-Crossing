@@ -4,9 +4,11 @@ import java.util.Random;
 
 public class Putnik {
 
+    private Boolean jeVozac = false;
     private Boolean imaKofer = false;
     private Boolean nedozvoljeneStvari = false;
     private Boolean neispravniDokumenti = false;
+    private Boolean presaoGranicu;
 
     public Putnik()
     {
@@ -41,6 +43,22 @@ public class Putnik {
         return neispravniDokumenti;
     }
 
+    public void setJeVozac(Boolean jeVozac) {
+        this.jeVozac = jeVozac;
+    }
+
+    public Boolean getJeVozac() {
+        return jeVozac;
+    }
+
+    public void setPresaoGranicu(Boolean presaoGranicu) {
+        this.presaoGranicu = presaoGranicu;
+    }
+
+    public Boolean getPresaoGranicu() {
+        return presaoGranicu;
+    }
+
     public Boolean isVjerovatnoca(Integer vjerovatnoca){
         Random random = new Random();
         Integer broj = random.nextInt(100) + 1;
@@ -50,5 +68,10 @@ public class Putnik {
         else{
             return false;
         }
+    }
+
+    @Override
+    public String toString(){
+        return "Putnik vozac - " + jeVozac + ", Nesipravni dokumenti - " + neispravniDokumenti + ", Nedopustene stvari - " + nedozvoljeneStvari;
     }
 }

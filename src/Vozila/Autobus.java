@@ -14,6 +14,10 @@ public class Autobus extends Vozilo{
         this.setVrijemeProcesuiranja(100);
         this.setOznaka("A");
         this.setBoja("cadetblue");
+        for(int i = 0; i < brojPutnika; i++){
+            this.listaPutnika.add(new Putnik());
+        }
+        this.listaPutnika.get(0).setJeVozac(true);
     }
 
     @Override

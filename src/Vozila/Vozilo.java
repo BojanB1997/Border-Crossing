@@ -1,5 +1,6 @@
 package Vozila;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Vozilo extends Thread {
@@ -10,6 +11,7 @@ public class Vozilo extends Thread {
     private String boja;
     public Object[][] mapa;
     public Boolean kreceSe = true;
+    public ArrayList<Putnik> listaPutnika;
 
     public Vozilo(Object[][] mapa) {
         super();
@@ -64,6 +66,15 @@ public class Vozilo extends Thread {
 
     public String getBoja() {
         return boja;
+    }
+
+    public float getDeklarisanaMasa()
+    {
+        return 0;
+    }
+
+    public float getStvarnaMasa(){
+        return 0;
     }
 
     @Override

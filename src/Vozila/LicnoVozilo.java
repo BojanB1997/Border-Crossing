@@ -14,6 +14,10 @@ public class LicnoVozilo extends Vozilo{
         this.setVrijemeProcesuiranja(500);
         this.setOznaka("LV");
         this.setBoja("tomato");
+        for(int i = 0; i < brojPutnika; i++){
+            this.listaPutnika.add(new Putnik());
+        }
+        this.listaPutnika.get(0).setJeVozac(true);
     }
 
     @Override

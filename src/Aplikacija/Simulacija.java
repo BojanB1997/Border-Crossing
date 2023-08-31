@@ -1,9 +1,6 @@
 package Aplikacija;
 
-import Vozila.Autobus;
-import Vozila.Kamion;
-import Vozila.LicnoVozilo;
-import Vozila.Vozilo;
+import Vozila.*;
 import javafx.scene.layout.GridPane;
 
 import java.util.ArrayList;
@@ -18,6 +15,8 @@ public class Simulacija extends Thread {
     public Object[][] mapa = new Object[5][52];
     public GridPane centarGP = new GridPane();
     public GridPane redGP = new GridPane();
+    public Boolean neMozePreciP = false;
+    public Boolean neMozePreciC = false;
 
     public Simulacija(GridPane centarGP, GridPane redGP) {
         super();
@@ -41,28 +40,58 @@ public class Simulacija extends Thread {
         while (listaVozila.size() > 0) {
             int i;
             for (i = 0; i < listaVozila.size(); i++) {
-
+                neMozePreciP = false;
                 System.out.println("Vozilo " + i + " - Pozicija u redu: " + listaVozila.get(i).getPozicijaURedu());
                 System.out.println("Velicina liste: " + listaVozila.size());
                 System.out.println("Vozilo: " + listaVozila.get(i));
-                if (listaVozila.get(i).getPozicijaURedu() == 51) { //Vozilo na carinskom terminalu
-                    synchronized (mapa) {
+                if (listaVozila.get(i).getPozicijaURedu() == 51) { //Kamion na carinskom terminalu
+                    for(Putnik putnik : listaVozila.get(i).listaPutnika){
+                        if(putnik.getNedozvoljeneStvari()){
+                            neMozePreciP = true;
+                            System.out.println(putnik);
+                        }
+                    }
+                    if(listaVozila.get(i).getStvarnaMasa() > listaVozila.get(i).getDeklarisanaMasa()){
+                        neMozePreciC = true;
+                        System.out.println("Masa nije uredna.");
+                    }
+                    if(!(neMozePreciC || neMozePreciP)) {
+                        synchronized (mapa) {
+                            mapa[3][51] = null;
+                        }
+                        listaVozila.get(i).kreceSe = false;
+                        synchronized (listaVozila) {
+                            listaVozila.remove(i);
+                        }
+                        System.out.println("Valjda obrisano: " + listaVozila.size());
+                    }else{
                         mapa[3][51] = null;
-                    }
-                    listaVozila.get(i).kreceSe = false;
-                    synchronized (listaVozila) {
+                        //Zapisati u fajl da je vozilo palo na carini i zbog cega
+                        listaVozila.get(i).kreceSe = false;
                         listaVozila.remove(i);
                     }
-                    System.out.println("Valjda obrisano: " + listaVozila.size());
-                } else if(listaVozila.get(i).getPozicijaURedu() == 54 || listaVozila.get(i).getPozicijaURedu() == 55){
-                    synchronized (mapa) {
+                } else if(listaVozila.get(i).getPozicijaURedu() == 54 || listaVozila.get(i).getPozicijaURedu() == 55){ //Vozilo na CT
+                    for(Putnik putnik : listaVozila.get(i).listaPutnika){
+                        if(putnik.getNedozvoljeneStvari()){
+                            neMozePreciP = true;
+                            System.out.println(putnik);
+                        }
+                    }
+                    if(!neMozePreciP) {
+                        synchronized (mapa) {
+                            mapa[1][51] = null;
+                        }
+                        listaVozila.get(i).kreceSe = false;
+                        synchronized (listaVozila) {
+                            listaVozila.remove(i);
+                        }
+                        System.out.println("Valjda obrisano: " + listaVozila.size());
+                    }else{
                         mapa[1][51] = null;
-                    }
-                    listaVozila.get(i).kreceSe = false;
-                    synchronized (listaVozila) {
+                        //Zapisati u fajl da je vozilo palo na carini i zbog cega
+                        listaVozila.get(i).kreceSe = false;
                         listaVozila.remove(i);
                     }
-                    System.out.println("Valjda obrisano: " + listaVozila.size());
                 }else if (listaVozila.get(i).getPozicijaURedu() == 49) { //Vozilo prvo u redu za obradu
                     synchronized (mapa) {
                         if (!"K".equals(listaVozila.get(i).getOznaka())) {
@@ -84,28 +113,64 @@ public class Simulacija extends Thread {
                         }
                     }
                 } else if (listaVozila.get(i).getPozicijaURedu() == 50) { //Kamion na PT
-                    synchronized (mapa) {
-                        if (mapa[3][51] == null) {
-                            mapa[3][51] = listaVozila.get(i).getOznaka();
-                            listaVozila.get(i).setPozicijaURedu(51);
-                            mapa[4][50] = null;
+                    for(Putnik putnik : listaVozila.get(i).listaPutnika){
+                        if(putnik.getNedozvoljeneStvari()){
+                            neMozePreciP = true;
+                            System.out.println(putnik);
                         }
+                    }
+                    if(!neMozePreciP) {
+                        synchronized (mapa) {
+                            if (mapa[3][51] == null) {
+                                mapa[3][51] = listaVozila.get(i).getOznaka();
+                                listaVozila.get(i).setPozicijaURedu(51);
+                                mapa[4][50] = null;
+                            }
+                        }
+                    }else{
+                        mapa[4][50] = null;
+                        //Zapisati u fajl da je vozilo palo na PT
+                        listaVozila.remove(i);
                     }
                 } else if (listaVozila.get(i).getPozicijaURedu() == 52) { //Vozilo na PT
-                    synchronized (mapa) {
-                        if (mapa[1][51] == null) {
-                            mapa[1][51] = listaVozila.get(i).getOznaka();
-                            listaVozila.get(i).setPozicijaURedu(54);
-                            mapa[0][50] = null;
+                    for(Putnik putnik : listaVozila.get(i).listaPutnika){
+                        if(putnik.getNedozvoljeneStvari()){
+                            neMozePreciP = true;
+                            System.out.println(putnik);
                         }
                     }
-                } else if (listaVozila.get(i).getPozicijaURedu() == 53) { //Vozilo na PT
-                    synchronized (mapa) {
-                        if (mapa[1][51] == null) {
-                            mapa[1][51] = listaVozila.get(i).getOznaka();
-                            listaVozila.get(i).setPozicijaURedu(55);
-                            mapa[2][50] = null;
+                    if(!neMozePreciP) {
+                        synchronized (mapa) {
+                            if (mapa[1][51] == null) {
+                                mapa[1][51] = listaVozila.get(i).getOznaka();
+                                listaVozila.get(i).setPozicijaURedu(54);
+                                mapa[0][50] = null;
+                            }
                         }
+                    }else{
+                        mapa[0][50] = null;
+                        //Zapisati u fajl da je vozilo palo na PT
+                        listaVozila.remove(i);
+                    }
+                } else if (listaVozila.get(i).getPozicijaURedu() == 53) { //Vozilo na PT
+                    for(Putnik putnik : listaVozila.get(i).listaPutnika){
+                        if(putnik.getNedozvoljeneStvari()){
+                            neMozePreciP = true;
+                            System.out.println(putnik);
+                        }
+                    }
+                    if(!neMozePreciP) {
+                        synchronized (mapa) {
+                            if (mapa[1][51] == null) {
+                                mapa[1][51] = listaVozila.get(i).getOznaka();
+                                listaVozila.get(i).setPozicijaURedu(55);
+                                mapa[2][50] = null;
+                            }
+                        }
+                    }else{
+                        mapa[2][50] = null;
+                        //Zapisati u fajl da je vozilo palo na PT
+                        listaVozila.remove(i);
                     }
                 }
 

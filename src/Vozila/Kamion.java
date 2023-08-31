@@ -20,6 +20,10 @@ public class Kamion extends Vozilo{
         this.setVrijemeProcesuiranja(500);
         this.setOznaka("K");
         this.setBoja("yellow");
+        for(int i = 0; i < brojPutnika; i++){
+            this.listaPutnika.add(new Putnik());
+        }
+        this.listaPutnika.get(0).setJeVozac(true);
         this.setPotrebnaDokumentacija(isVjerovatnoca(50));
         this.setDeklarisanaMasa(min + random.nextFloat() * (max - min));
         this.setVecaStvarnaMasa(isVjerovatnoca(20));
@@ -40,6 +44,7 @@ public class Kamion extends Vozilo{
         this.deklarisanaMasa = deklarisanaMasa;
     }
 
+    @Override
     public float getDeklarisanaMasa() {
         return deklarisanaMasa;
     }
@@ -48,6 +53,7 @@ public class Kamion extends Vozilo{
         this.stvarnaMasa = stvarnaMasa;
     }
 
+    @Override
     public float getStvarnaMasa() {
         return stvarnaMasa;
     }
