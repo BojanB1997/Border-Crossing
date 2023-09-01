@@ -1,0 +1,8 @@
+p-Problem putnika sa dokumentacijom.
+Putnik[ID:104]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+p-Problem putnika sa dokumentacijom.
+Putnik[ID:176]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+p-Problem putnika sa dokumentacijom.
+Putnik[ID:76]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+p-Problem putnika sa dokumentacijom.
+Putnik[ID:121]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true

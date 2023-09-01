@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class Putnik {
 
+    private Integer id;
+    private static Integer nextId = 1;
     private Boolean jeVozac = false;
     private Boolean imaKofer = false;
     private Boolean nedozvoljeneStvari = false;
@@ -12,6 +14,8 @@ public class Putnik {
 
     public Putnik()
     {
+        this.id = nextId;
+        nextId++;
         setImaKofer(isVjerovatnoca(70));
         if(getImaKofer()){
             setNedozvoljeneStvari(isVjerovatnoca(10));
@@ -51,6 +55,10 @@ public class Putnik {
         return jeVozac;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
     public void setPresaoGranicu(Boolean presaoGranicu) {
         this.presaoGranicu = presaoGranicu;
     }
@@ -72,6 +80,7 @@ public class Putnik {
 
     @Override
     public String toString(){
-        return "Putnik vozac - " + jeVozac + ", Nesipravni dokumenti - " + neispravniDokumenti + ", Nedopustene stvari - " + nedozvoljeneStvari;
+        return "Putnik[ID:" + getId() + "]-Vozac:" + jeVozac + "-Nesipravni dokumenti:" + neispravniDokumenti +
+                "-Nedopustene stvari:" + nedozvoljeneStvari;
     }
 }

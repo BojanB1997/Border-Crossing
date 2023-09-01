@@ -7,6 +7,8 @@ public class Kamion extends Vozilo{
     private float deklarisanaMasa;
     private float stvarnaMasa;
     private Boolean vecaStvarnaMasa;
+    private Integer kId;
+    private static Integer nextId = 1;
 
     Random random = new Random();
     private float min = 5.1f;
@@ -15,6 +17,8 @@ public class Kamion extends Vozilo{
 
     public Kamion(Object[][] mapa){
         super(mapa);
+        this.kId = nextId;
+        nextId++;
         brojPutnika = random.nextInt(3) + 1;
         this.setBrojPutnika(brojPutnika);
         this.setVrijemeProcesuiranja(500);
@@ -44,6 +48,10 @@ public class Kamion extends Vozilo{
         this.deklarisanaMasa = deklarisanaMasa;
     }
 
+    public Integer getkId() {
+        return kId;
+    }
+
     @Override
     public float getDeklarisanaMasa() {
         return deklarisanaMasa;
@@ -68,6 +76,7 @@ public class Kamion extends Vozilo{
 
     @Override
     public String toString(){
-        return "Kamion - broj putnika: " + brojPutnika;
+        return "Kamion[ID:" + getkId() + "]-Broj putnika:" + brojPutnika + "-Deklarisana masa:" + getDeklarisanaMasa()
+                + "-Stvarna masa:" + getStvarnaMasa() + "-Putnici:" + listaPutnika;
     }
 }

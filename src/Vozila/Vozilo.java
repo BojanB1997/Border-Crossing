@@ -11,7 +11,7 @@ public class Vozilo extends Thread {
     private String boja;
     public Object[][] mapa;
     public Boolean kreceSe = true;
-    public ArrayList<Putnik> listaPutnika;
+    public ArrayList<Putnik> listaPutnika = new ArrayList<Putnik>();
 
     public Vozilo(Object[][] mapa) {
         super();
