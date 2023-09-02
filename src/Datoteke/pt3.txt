@@ -2,3 +2,5 @@ pv-Problem vozaca sa dokumentima.
 Kamion[ID:10]-Broj putnika:3-Deklarisana masa:9.982136-Stvarna masa:0.0-Putnici:[Putnik[ID:237]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:238]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:239]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
 p-Problem putnika sa dokumentima.
 Putnik[ID:235]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+p-Problem putnika sa dokumentima.
+Putnik[ID:266]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true

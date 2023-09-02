@@ -75,7 +75,8 @@ public class Simulacija extends Thread {
                         System.out.println("Masa nije uredna.");
                     }
                     if(!neMozePreciCT) {
-                        for(int j = 0; j < listaVozila.get(i).getBrojPutnika(); j++){
+                        Integer j = 0;
+                        while(j < listaVozila.get(i).getBrojPutnika()){
                             Putnik putnik = listaVozila.get(i).listaPutnika.get(j);
                             if (putnik.getNedozvoljeneStvari()) {
                                 if (putnik.getJeVozac()) {
@@ -97,6 +98,7 @@ public class Simulacija extends Thread {
                                     listaVozila.get(i).listaPutnika.remove(putnik);
                                 }
                             }
+                            j++;
                         }
                     }
                     if(!(neMozePreciCT || neMozePreciPT)) {
@@ -136,7 +138,8 @@ public class Simulacija extends Thread {
                         listaVozila.remove(i);
                     }
                 } else if(listaVozila.get(i).getPozicijaURedu() == 54 || listaVozila.get(i).getPozicijaURedu() == 55){ //Vozilo na CT
-                    for(int j = 0; j < listaVozila.get(i).getBrojPutnika(); j++){
+                    Integer j = 0;
+                    while(j < listaVozila.get(i).getBrojPutnika()){
                         Putnik putnik = listaVozila.get(i).listaPutnika.get(j);
                         if(putnik.getNedozvoljeneStvari()){
                             if(putnik.getJeVozac()) {
@@ -158,6 +161,7 @@ public class Simulacija extends Thread {
                                 listaVozila.get(i).listaPutnika.remove(putnik);
                             }
                         }
+                        j++;
                     }
                     if(!neMozePreciPT) {
                         synchronized (mapa) {
@@ -216,7 +220,8 @@ public class Simulacija extends Thread {
                         }
                     }
                 } else if (listaVozila.get(i).getPozicijaURedu() == 50) { //Kamion na PT
-                    for(int j = 0; j < listaVozila.get(i).getBrojPutnika(); j++){
+                    Integer j = 0;
+                    while(j < listaVozila.get(i).getBrojPutnika()){
                         Putnik putnik = listaVozila.get(i).listaPutnika.get(j);
                         if(putnik.getNedozvoljeneStvari()){
                             if(putnik.getJeVozac()) {
@@ -238,6 +243,7 @@ public class Simulacija extends Thread {
                                 listaVozila.get(i).listaPutnika.remove(putnik);
                             }
                         }
+                        j++;
                     }
                     if(!neMozePreciPT) {
                         synchronized (mapa) {
@@ -263,7 +269,8 @@ public class Simulacija extends Thread {
                         listaVozila.remove(i);
                     }
                 } else if (listaVozila.get(i).getPozicijaURedu() == 52) { //Vozilo na PT
-                    for(int j = 0; j < listaVozila.get(i).getBrojPutnika(); j++){
+                    Integer j = 0;
+                    while(j < listaVozila.get(i).getBrojPutnika()){
                         Putnik putnik = listaVozila.get(i).listaPutnika.get(j);
                         if(putnik.getNedozvoljeneStvari()){
                             if(putnik.getJeVozac()) {
@@ -285,6 +292,7 @@ public class Simulacija extends Thread {
                                 listaVozila.get(i).listaPutnika.remove(putnik);
                             }
                         }
+                        j++;
                     }
                     if(!neMozePreciPT) {
                         synchronized (mapa) {
@@ -310,7 +318,8 @@ public class Simulacija extends Thread {
                         listaVozila.remove(i);
                     }
                 } else if (listaVozila.get(i).getPozicijaURedu() == 53) { //Vozilo na PT
-                    for(int j = 0; j < listaVozila.get(i).getBrojPutnika(); j++){
+                    Integer j = 0;
+                    while(j < listaVozila.get(i).getBrojPutnika()){
                         Putnik putnik = listaVozila.get(i).listaPutnika.get(j);
                         if(putnik.getJeVozac()) {
                             neMozePreciPT = true;
@@ -330,6 +339,7 @@ public class Simulacija extends Thread {
                             }
                             listaVozila.get(i).listaPutnika.remove(putnik);
                         }
+                        j++;
                     }
                     if(!neMozePreciPT) {
                         synchronized (mapa) {
