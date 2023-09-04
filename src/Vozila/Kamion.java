@@ -31,9 +31,6 @@ public class Kamion extends Vozilo{
         this.setPotrebnaDokumentacija(isVjerovatnoca(50));
         this.setDeklarisanaMasa(min + random.nextFloat() * (max - min));
         this.setVecaStvarnaMasa(isVjerovatnoca(20));
-        if(getVecaStvarnaMasa()){
-            this.setStvarnaMasa(getDeklarisanaMasa() * (random.nextFloat() * 0.3f));
-        }
     }
 
     public void setPotrebnaDokumentacija(Boolean potrebnaDokumentacija) {
@@ -63,6 +60,12 @@ public class Kamion extends Vozilo{
 
     @Override
     public float getStvarnaMasa() {
+        if(getVecaStvarnaMasa()){
+            float procenat = random.nextFloat() * 0.3f;
+            stvarnaMasa = getDeklarisanaMasa() * (1.0f + procenat);
+        }else{
+            stvarnaMasa = 4.0f + random.nextFloat() * (getDeklarisanaMasa() - 4.0f);
+        }
         return stvarnaMasa;
     }
 

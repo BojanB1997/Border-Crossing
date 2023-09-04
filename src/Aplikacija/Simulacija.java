@@ -1,11 +1,14 @@
 package Aplikacija;
 
+import Terminal.CarinskiTerminal;
+import Terminal.PolicijskiTerminal;
 import Vozila.*;
 import javafx.scene.layout.GridPane;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 public class Simulacija extends Thread {
     ArrayList<Vozilo> listaVozila = new ArrayList<Vozilo>();
@@ -40,6 +43,20 @@ public class Simulacija extends Thread {
             listaVozila.get(i).start();
         }
 
+        String pt1txt = currentDir + projectPath + "pt1.txt";
+        String pt2txt = currentDir + projectPath + "pt2.txt";
+        String pt3txt = currentDir + projectPath + "pt3.txt";
+        PolicijskiTerminal pt1 = new PolicijskiTerminal(listaVozila, mapa, 53, pt1txt);
+        PolicijskiTerminal pt2 = new PolicijskiTerminal(listaVozila, mapa, 52, pt2txt);
+        PolicijskiTerminal pt3 = new PolicijskiTerminal(listaVozila, mapa, 50, pt3txt);
+
+        String ct1txt = currentDir + projectPath + "ct1.txt";
+        String ct2txt = currentDir + projectPath + "ct2.txt";
+        String uredni = currentDir + projectPath + "uredni.txt";
+
+        CarinskiTerminal ct1 = new CarinskiTerminal(listaVozila, mapa, 54, ct1txt, uredni);
+        CarinskiTerminal ct2 = new CarinskiTerminal(listaVozila, mapa, 51, ct2txt, uredni);
+
         File evidencijaPT1 = new File(currentDir + projectPath + "pt1.txt");
         File evidencijaPT2 = new File(currentDir + projectPath + "pt2.txt");
         File evidencijaPT3 = new File(currentDir + projectPath + "pt3.txt");
@@ -47,37 +64,87 @@ public class Simulacija extends Thread {
         File evidencijaCT2 = new File(currentDir + projectPath + "ct2.txt");
         File evidencijaUrednih = new File(currentDir + projectPath + "uredni.txt");
 
+        try {
+            FileWriter isprazniPT1 = new FileWriter(evidencijaPT1);
+            FileWriter isprazniPT2 = new FileWriter(evidencijaPT2);
+            FileWriter isprazniPT3 = new FileWriter(evidencijaPT3);
+            FileWriter isprazniCT1 = new FileWriter(evidencijaCT1);
+            FileWriter isprazniCT2 = new FileWriter(evidencijaCT2);
+            FileWriter isprazniUredne = new FileWriter(evidencijaUrednih);
+
+            isprazniPT1.write("");
+            isprazniPT2.write("");
+            isprazniPT3.write("");
+            isprazniCT1.write("");
+            isprazniCT2.write("");
+            isprazniUredne.write("");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
         Pomjerac pomjerac = new Pomjerac(listaVozila, centarGP, redGP, mapa);
-        //pomjerac.start();
-        while (listaVozila.size() > 0) {
-            int i;
-            for (i = 0; i < listaVozila.size(); i++) {
+        pomjerac.start();
+        do {
+            try{
+                FileReader read = new FileReader(currentDir + projectPath + "config.txt");
+                BufferedReader reader = new BufferedReader(read);
+                String line;
+                while((line = reader.readLine())!= null){
+                    String[] linija = line.split("-");
+                    if(linija.length == 2){
+                        String key = linija[0];
+                        String value = linija[1];
+                        Boolean radi = "True".equalsIgnoreCase(value);
+                        if("PT1".equalsIgnoreCase(key)){
+                            pt1.setuFunkciji(radi);
+                        }else if("PT2".equalsIgnoreCase(key)){
+                            pt2.setuFunkciji(radi);
+                        }else if("PT3".equalsIgnoreCase(key)){
+                            pt3.setuFunkciji(radi);
+                        }else if("CT1".equalsIgnoreCase(key)){
+                            ct1.setuFunkciji(radi);
+                        }else if("CT2".equalsIgnoreCase(key)){
+                            ct2.setuFunkciji(radi);
+                        }
+                    }
+                }
+                reader.close();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            Iterator<Vozilo> voziloIterator = listaVozila.iterator();
+            while (voziloIterator.hasNext()) {
+                Vozilo vozilo = voziloIterator.next();
                 neMozePreciPT = false;
                 neMozePreciCT = false;
                 neMozePreciPutnik = false;
-                System.out.println("Vozilo " + i + " - Pozicija u redu: " + listaVozila.get(i).getPozicijaURedu());
+                System.out.println("Vozilo " + vozilo + "- Pozicija u redu:" + vozilo.getPozicijaURedu());
                 System.out.println("Velicina liste: " + listaVozila.size());
-                System.out.println("Vozilo: " + listaVozila.get(i));
-                if (listaVozila.get(i).getPozicijaURedu() == 51) { //Kamion na carinskom terminalu
-                    if(listaVozila.get(i).getStvarnaMasa() > listaVozila.get(i).getDeklarisanaMasa()){
+                if (vozilo.getPozicijaURedu() == 51 && ct2.getuFunkciji()) { //Kamion na carinskom terminalu
+                    try{
+                        sleep(500);
+                    }catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
+                    if (vozilo.getStvarnaMasa() > vozilo.getDeklarisanaMasa()) {
                         neMozePreciCT = true;
-                        try{
+                        try {
                             FileWriter writer = new FileWriter(evidencijaCT2, true);
                             BufferedWriter buff = new BufferedWriter(writer);
                             buff.write("m-Stvarna masa je razlicita od deklarisane.");
                             buff.newLine();
-                            buff.write(String.valueOf(listaVozila.get(i)));
+                            buff.write(String.valueOf(vozilo));
                             buff.newLine();
                             buff.close();
-                        }catch(Exception e){
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
                         System.out.println("Masa nije uredna.");
                     }
-                    if(!neMozePreciCT) {
-                        Integer j = 0;
-                        while(j < listaVozila.get(i).getBrojPutnika()){
-                            Putnik putnik = listaVozila.get(i).listaPutnika.get(j);
+                    if (!neMozePreciCT) {
+                        Iterator<Putnik> putnikIterator = vozilo.listaPutnika.iterator();
+                        while (putnikIterator.hasNext()) {
+                            Putnik putnik = putnikIterator.next();
                             if (putnik.getNedozvoljeneStvari()) {
                                 if (putnik.getJeVozac()) {
                                     neMozePreciPT = true;
@@ -95,59 +162,58 @@ public class Simulacija extends Thread {
                                     } catch (Exception e) {
                                         e.printStackTrace();
                                     }
-                                    listaVozila.get(i).listaPutnika.remove(putnik);
+                                    putnikIterator.remove();
                                 }
                             }
-                            j++;
                         }
                     }
-                    if(!(neMozePreciCT || neMozePreciPT)) {
+                    if (!(neMozePreciCT || neMozePreciPT)) {
                         synchronized (mapa) {
                             mapa[3][51] = null;
                         }
-                        try{
+                        try {
                             FileWriter writer = new FileWriter(evidencijaUrednih, true);
                             BufferedWriter buff = new BufferedWriter(writer);
                             buff.write("u-Vozilo je uredno preslo granicu.");
                             buff.newLine();
-                            buff.write(String.valueOf(listaVozila.get(i)));
+                            buff.write(String.valueOf(vozilo));
                             buff.newLine();
                             buff.close();
-                        }catch (Exception e){
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
-                        listaVozila.get(i).kreceSe = false;
-                        synchronized (listaVozila) {
-                            listaVozila.remove(i);
-                        }
+                        vozilo.kreceSe = false;
+                        voziloIterator.remove();
                         System.out.println("Valjda obrisano: " + listaVozila.size());
-                    }else{
-                        mapa[3][51] = null;
-                        try{
+                    } else {
+                        synchronized (mapa) {
+                            mapa[3][51] = null;
+                        }
+                        try {
                             FileWriter writer = new FileWriter(evidencijaCT2, true);
                             BufferedWriter buff = new BufferedWriter(writer);
                             buff.write("kv-Vozac je imao nedozvoljene stvari u koferu.");
                             buff.newLine();
-                            buff.write(String.valueOf(listaVozila.get(i)));
+                            buff.write(String.valueOf(vozilo));
                             buff.newLine();
                             buff.close();
-                        }catch (Exception e){
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
-                        listaVozila.get(i).kreceSe = false;
-                        listaVozila.remove(i);
+                        vozilo.kreceSe = false;
+                        voziloIterator.remove();
                     }
-                } else if(listaVozila.get(i).getPozicijaURedu() == 54 || listaVozila.get(i).getPozicijaURedu() == 55){ //Vozilo na CT
-                    Integer j = 0;
-                    while(j < listaVozila.get(i).getBrojPutnika()){
-                        Putnik putnik = listaVozila.get(i).listaPutnika.get(j);
-                        if(putnik.getNedozvoljeneStvari()){
-                            if(putnik.getJeVozac()) {
+                } else if ((vozilo.getPozicijaURedu() == 54 || vozilo.getPozicijaURedu() == 55) && ct1.getuFunkciji()) { //Vozilo na CT
+                    Iterator<Putnik> putnikIterator = vozilo.listaPutnika.iterator();
+                    while (putnikIterator.hasNext()) {
+                        Putnik putnik = putnikIterator.next();
+                        if (putnik.getNedozvoljeneStvari()) {
+                            if (putnik.getJeVozac()) {
                                 neMozePreciPT = true;
                                 System.out.println(putnik);
                                 break;
-                            }else{
-                                try{
+                            } else {
+                                try {
                                     FileWriter writer = new FileWriter(evidencijaCT1, true);
                                     BufferedWriter buff = new BufferedWriter(writer);
                                     buff.write("k-Putnik je imao nedozvoljene stvari u koferu.");
@@ -155,81 +221,85 @@ public class Simulacija extends Thread {
                                     buff.write(String.valueOf(putnik));
                                     buff.newLine();
                                     buff.close();
-                                }catch(Exception e){
+                                } catch (Exception e) {
                                     e.printStackTrace();
                                 }
-                                listaVozila.get(i).listaPutnika.remove(putnik);
+                                putnikIterator.remove();
                             }
                         }
-                        j++;
+                        try{
+                            sleep(vozilo.getVrijemeProcesuiranja());
+                        }catch(InterruptedException e){
+                            e.printStackTrace();
+                        }
                     }
-                    if(!neMozePreciPT) {
+                    if (!neMozePreciPT) {
                         synchronized (mapa) {
                             mapa[1][51] = null;
                         }
-                        try{
+                        try {
                             FileWriter writer = new FileWriter(evidencijaUrednih, true);
                             BufferedWriter buff = new BufferedWriter(writer);
                             buff.write("u-Vozilo je uredno preslo granicu.");
                             buff.newLine();
-                            buff.write(String.valueOf(listaVozila.get(i)));
+                            buff.write(String.valueOf(vozilo));
                             buff.newLine();
                             buff.close();
-                        }catch(Exception e){
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
-                        listaVozila.get(i).kreceSe = false;
-                        synchronized (listaVozila) {
-                            listaVozila.remove(i);
-                        }
+                        vozilo.kreceSe = false;
+                        voziloIterator.remove();
                         System.out.println("Valjda obrisano: " + listaVozila.size());
-                    }else{
-                        mapa[1][51] = null;
-                        try{
+                    } else {
+                        synchronized (mapa) {
+                            mapa[1][51] = null;
+                        }
+                        try {
                             FileWriter writer = new FileWriter(evidencijaCT1, true);
                             BufferedWriter buff = new BufferedWriter(writer);
                             buff.write("kv-Vozac je imao nedozvoljene stvari u koferu.");
                             buff.newLine();
-                            buff.write(String.valueOf(listaVozila.get(i)));
+                            buff.write(String.valueOf(vozilo));
                             buff.newLine();
                             buff.close();
-                        }catch(Exception e){
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
-                        listaVozila.get(i).kreceSe = false;
-                        listaVozila.remove(i);
+                        vozilo.kreceSe = false;
+                        voziloIterator.remove();
                     }
-                }else if (listaVozila.get(i).getPozicijaURedu() == 49) { //Vozilo prvo u redu za obradu
+                } else if (vozilo.getPozicijaURedu() == 49) { //Vozilo prvo u redu za obradu
                     synchronized (mapa) {
-                        if (!"K".equals(listaVozila.get(i).getOznaka())) {
+                        if (!"K".equals(vozilo.getOznaka())) {
                             if (mapa[0][50] == null) {
-                                mapa[0][50] = listaVozila.get(i).getOznaka();
-                                listaVozila.get(i).setPozicijaURedu(52);
+                                mapa[0][50] = vozilo.getOznaka();
+                                vozilo.setPozicijaURedu(52);
                                 mapa[2][49] = null;
                             } else if (mapa[2][50] == null) {
-                                mapa[2][50] = listaVozila.get(i).getOznaka();
-                                listaVozila.get(i).setPozicijaURedu(53);
+                                mapa[2][50] = vozilo.getOznaka();
+                                vozilo.setPozicijaURedu(53);
                                 mapa[2][49] = null;
                             }
                         } else {
                             if (mapa[4][50] == null) {
-                                mapa[4][50] = listaVozila.get(i).getOznaka();
-                                listaVozila.get(i).setPozicijaURedu(50);
+                                mapa[4][50] = vozilo.getOznaka();
+                                vozilo.setPozicijaURedu(50);
                                 mapa[2][49] = null;
                             }
                         }
                     }
-                } else if (listaVozila.get(i).getPozicijaURedu() == 50) { //Kamion na PT
-                    Integer j = 0;
-                    while(j < listaVozila.get(i).getBrojPutnika()){
-                        Putnik putnik = listaVozila.get(i).listaPutnika.get(j);
-                        if(putnik.getNedozvoljeneStvari()){
-                            if(putnik.getJeVozac()) {
+                } else if (vozilo.getPozicijaURedu() == 50 && pt3.getuFunkciji()) { //Kamion na PT
+                    Iterator<Putnik> putnikIterator = vozilo.listaPutnika.iterator();
+                    while (putnikIterator.hasNext()) {
+                        Putnik putnik = putnikIterator.next();
+                        if (putnik.getNespravniDokumenti()) {
+                            if (putnik.getJeVozac()) {
                                 neMozePreciPT = true;
                                 System.out.println(putnik);
                                 break;
-                            }else{
-                                try{
+                            } else {
+                                try {
                                     FileWriter writer = new FileWriter(evidencijaPT3, true);
                                     BufferedWriter buff = new BufferedWriter(writer);
                                     buff.write("p-Problem putnika sa dokumentima.");
@@ -237,48 +307,54 @@ public class Simulacija extends Thread {
                                     buff.write(String.valueOf(putnik));
                                     buff.newLine();
                                     buff.close();
-                                }catch(Exception e){
+                                } catch (Exception e) {
                                     e.printStackTrace();
                                 }
-                                listaVozila.get(i).listaPutnika.remove(putnik);
+                                putnikIterator.remove();
                             }
                         }
-                        j++;
+                        try{
+                            sleep(vozilo.getVrijemeProcesuiranja());
+                        }catch(InterruptedException e){
+                            e.printStackTrace();
+                        }
                     }
-                    if(!neMozePreciPT) {
+                    if (!neMozePreciPT) {
                         synchronized (mapa) {
                             if (mapa[3][51] == null) {
-                                mapa[3][51] = listaVozila.get(i).getOznaka();
-                                listaVozila.get(i).setPozicijaURedu(51);
+                                mapa[3][51] = vozilo.getOznaka();
+                                vozilo.setPozicijaURedu(51);
                                 mapa[4][50] = null;
                             }
                         }
-                    }else{
-                        mapa[4][50] = null;
-                        try{
+                    } else {
+                        synchronized (mapa) {
+                            mapa[4][50] = null;
+                        }
+                        try {
                             FileWriter writer = new FileWriter(evidencijaPT3, true);
                             BufferedWriter buff = new BufferedWriter(writer);
                             buff.write("pv-Problem vozaca sa dokumentima.");
                             buff.newLine();
-                            buff.write(String.valueOf(listaVozila.get(i)));
+                            buff.write(String.valueOf(vozilo));
                             buff.newLine();
                             buff.close();
-                        }catch (Exception e){
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
-                        listaVozila.remove(i);
+                        voziloIterator.remove();
                     }
-                } else if (listaVozila.get(i).getPozicijaURedu() == 52) { //Vozilo na PT
-                    Integer j = 0;
-                    while(j < listaVozila.get(i).getBrojPutnika()){
-                        Putnik putnik = listaVozila.get(i).listaPutnika.get(j);
-                        if(putnik.getNedozvoljeneStvari()){
-                            if(putnik.getJeVozac()) {
+                } else if (vozilo.getPozicijaURedu() == 52 && pt2.getuFunkciji()) { //Vozilo na PT
+                    Iterator<Putnik> putnikIterator = vozilo.listaPutnika.iterator();
+                    while (putnikIterator.hasNext()) {
+                        Putnik putnik = putnikIterator.next();
+                        if (putnik.getNespravniDokumenti()) {
+                            if (putnik.getJeVozac()) {
                                 neMozePreciPT = true;
                                 System.out.println(putnik);
                                 break;
-                            }else{
-                                try{
+                            } else {
+                                try {
                                     FileWriter writer = new FileWriter(evidencijaPT1, true);
                                     BufferedWriter buff = new BufferedWriter(writer);
                                     buff.write("p-Problem putnika sa dokumentacijom.");
@@ -286,83 +362,97 @@ public class Simulacija extends Thread {
                                     buff.write(String.valueOf(putnik));
                                     buff.newLine();
                                     buff.close();
-                                }catch(Exception e){
+                                } catch (Exception e) {
                                     e.printStackTrace();
                                 }
-                                listaVozila.get(i).listaPutnika.remove(putnik);
+                                putnikIterator.remove();
                             }
                         }
-                        j++;
+                        try{
+                            sleep(vozilo.getVrijemeProcesuiranja());
+                        }catch(InterruptedException e){
+                            e.printStackTrace();
+                        }
                     }
-                    if(!neMozePreciPT) {
+                    if (!neMozePreciPT) {
                         synchronized (mapa) {
                             if (mapa[1][51] == null) {
-                                mapa[1][51] = listaVozila.get(i).getOznaka();
-                                listaVozila.get(i).setPozicijaURedu(54);
+                                mapa[1][51] = vozilo.getOznaka();
+                                vozilo.setPozicijaURedu(54);
                                 mapa[0][50] = null;
                             }
                         }
-                    }else{
-                        mapa[0][50] = null;
-                        try{
+                    } else {
+                        synchronized (mapa) {
+                            mapa[0][50] = null;
+                        }
+                        try {
                             FileWriter writer = new FileWriter(evidencijaPT1, true);
                             BufferedWriter buff = new BufferedWriter(writer);
                             buff.write("pv-Problem vozaca sa dokumentacijom.");
                             buff.newLine();
-                            buff.write(String.valueOf(listaVozila.get(i)));
+                            buff.write(String.valueOf(vozilo));
                             buff.newLine();
                             buff.close();
-                        }catch(Exception e){
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
-                        listaVozila.remove(i);
+                        voziloIterator.remove();
                     }
-                } else if (listaVozila.get(i).getPozicijaURedu() == 53) { //Vozilo na PT
-                    Integer j = 0;
-                    while(j < listaVozila.get(i).getBrojPutnika()){
-                        Putnik putnik = listaVozila.get(i).listaPutnika.get(j);
-                        if(putnik.getJeVozac()) {
-                            neMozePreciPT = true;
-                            System.out.println(putnik);
-                            break;
-                        }else{
-                            try{
-                                FileWriter writer = new FileWriter(evidencijaPT2, true);
-                                BufferedWriter buff = new BufferedWriter(writer);
-                                buff.write("p-Problem putnika sa dokumentacijom.");
-                                buff.newLine();
-                                buff.write(String.valueOf(putnik));
-                                buff.newLine();
-                                buff.close();
-                            }catch(Exception e){
-                                e.printStackTrace();
+                } else if (vozilo.getPozicijaURedu() == 53 && pt1.getuFunkciji()) { //Vozilo na PT
+                    Iterator<Putnik> putnikIterator = vozilo.listaPutnika.iterator();
+                    while (putnikIterator.hasNext()) {
+                        Putnik putnik = putnikIterator.next();
+                        if(putnik.getNespravniDokumenti()) {
+                            if (putnik.getJeVozac()) {
+                                neMozePreciPT = true;
+                                System.out.println(putnik);
+                                break;
+                            } else {
+                                try {
+                                    FileWriter writer = new FileWriter(evidencijaPT2, true);
+                                    BufferedWriter buff = new BufferedWriter(writer);
+                                    buff.write("p-Problem putnika sa dokumentacijom.");
+                                    buff.newLine();
+                                    buff.write(String.valueOf(putnik));
+                                    buff.newLine();
+                                    buff.close();
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                                putnikIterator.remove();
                             }
-                            listaVozila.get(i).listaPutnika.remove(putnik);
                         }
-                        j++;
+                        try{
+                            sleep(vozilo.getVrijemeProcesuiranja());
+                        }catch(InterruptedException e){
+                            e.printStackTrace();
+                        }
                     }
-                    if(!neMozePreciPT) {
+                    if (!neMozePreciPT) {
                         synchronized (mapa) {
                             if (mapa[1][51] == null) {
-                                mapa[1][51] = listaVozila.get(i).getOznaka();
-                                listaVozila.get(i).setPozicijaURedu(55);
+                                mapa[1][51] = vozilo.getOznaka();
+                                vozilo.setPozicijaURedu(55);
                                 mapa[2][50] = null;
                             }
                         }
-                    }else{
-                        mapa[2][50] = null;
-                        try{
+                    } else {
+                        synchronized (mapa) {
+                            mapa[2][50] = null;
+                        }
+                        try {
                             FileWriter writer = new FileWriter(evidencijaPT2, true);
                             BufferedWriter buff = new BufferedWriter(writer);
                             buff.write("pv-Problem vozaca sa dokumentacijom.");
                             buff.newLine();
-                            buff.write(String.valueOf(listaVozila.get(i)));
+                            buff.write(String.valueOf(vozilo));
                             buff.newLine();
                             buff.close();
-                        }catch(Exception e){
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
-                        listaVozila.remove(i);
+                        voziloIterator.remove();
                     }
                 }
 
@@ -374,7 +464,7 @@ public class Simulacija extends Thread {
                     e.printStackTrace();
                 }
             }
-        }
+        }while(!listaVozila.isEmpty());
         System.out.println("Svi presli granicu.");
 
     }

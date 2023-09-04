@@ -1,0 +1,24 @@
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:132]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:138]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:141]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:142]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Licno vozilo[ID:7]-Broj putnika:5-Putnici:[Putnik[ID:13]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:14]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:15]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:16]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:17]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:159]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:189]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:194]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:195]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:196]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Licno vozilo[ID:6]-Broj putnika:1-Putnici:[Putnik[ID:12]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true]
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Licno vozilo[ID:22]-Broj putnika:1-Putnici:[Putnik[ID:64]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true]
