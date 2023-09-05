@@ -64,15 +64,15 @@ public class Pomjerac extends Thread {
 
             synchronized (listaVozila) {
                 i = listaVozila.size() - 1;
-            }
+                System.out.println("");
 
-            counter = 49 - i;
-            counterCenter = 4;
-            counterRed = 44;
-            System.out.println("I je " + i);
+                counter = 49 - i;
+                counterCenter = 4;
+                counterRed = 44;
+                System.out.println("I je " + i);
 
-            while (i > -1) {
-                synchronized (listaVozila) {
+                while (i > -1) {
+                    synchronized (listaVozila) {
 //                    if (listaVozila.get(i).getPozicijaURedu() > 49) {
 //                        Runnable update = () -> {
 //                            if (listaVozila.get(i).getPozicijaURedu() == 50) {
@@ -97,27 +97,37 @@ public class Pomjerac extends Thread {
 //                        };
 //                        Platform.runLater(update);
 //                    }
+                        try {
+                            sleep(5);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+
+                        //System.out.println("I + counter = " + (i + counter));
+                        Runnable update = () -> {
+                            dugmici.get(i + counter).setStyle("-fx-background-color: " + listaVozila.get(i).getBoja());
+                        };
+
+                        Platform.runLater(update);
+
+                    }
                     try {
-                        sleep(5);
+                        sleep(10);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-
-                    System.out.println("I + counter = " + (i + counter));
-                    Runnable update = () -> {
-                        dugmici.get(i + counter).setStyle("-fx-background-color: " + listaVozila.get(i).getBoja());
-                    };
-
-                    Platform.runLater(update);
-
+                    i--;
+                    try {
+                        sleep(10);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
-                try {
-                    sleep(10);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                i--;
-
+            }
+            try{
+                sleep(11);
+            }catch(InterruptedException e){
+                e.printStackTrace();
             }
             while (counter > 0) {
                 Runnable clear = () -> {

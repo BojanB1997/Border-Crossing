@@ -1,2 +1,6 @@
 k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:208]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+Putnik[ID:271]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+m-Stvarna masa je razlicita od deklarisane.
+Kamion[ID:8]-Broj putnika:3-Deklarisana masa:6.837704-Stvarna masa:7.1591253-Putnici:[Putnik[ID:280]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:281]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:282]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Kamion[ID:8]-Broj putnika:3-Deklarisana masa:6.837704-Stvarna masa:6.963405-Putnici:[Putnik[ID:280]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:281]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:282]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]

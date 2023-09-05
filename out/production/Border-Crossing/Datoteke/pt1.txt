@@ -1,8 +1,0 @@
-p-Problem putnika sa dokumentacijom.
-Putnik[ID:149]-Vozac:false-Nesipravni dokumenti:true-Nedopustene stvari:false
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:12]-Broj putnika:5-Putnici:[Putnik[ID:43]-Vozac:true-Nesipravni dokumenti:true-Nedopustene stvari:false, Putnik[ID:44]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:45]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:46]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:47]-Vozac:false-Nesipravni dokumenti:true-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:15]-Broj putnika:2-Putnici:[Putnik[ID:58]-Vozac:true-Nesipravni dokumenti:true-Nedopustene stvari:false, Putnik[ID:59]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-p-Problem putnika sa dokumentacijom.
-Putnik[ID:105]-Vozac:false-Nesipravni dokumenti:true-Nedopustene stvari:false
