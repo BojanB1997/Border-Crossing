@@ -84,7 +84,7 @@ public abstract class Vozilo extends Thread {
             if (getPozicijaURedu() < 49) {
                 synchronized (mapa) {
                     if (mapa[2][getPozicijaURedu() + 1] == null) {
-                        mapa[2][getPozicijaURedu() + 1] = getOznaka();
+                        mapa[2][getPozicijaURedu() + 1] = this;
                         mapa[2][getPozicijaURedu()] = null;
                         setPozicijaURedu(getPozicijaURedu() + 1);
                     }

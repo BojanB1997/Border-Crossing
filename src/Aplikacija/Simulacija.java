@@ -131,7 +131,7 @@ public class Simulacija extends Thread {
                     //System.out.println("Velicina liste: " + listaVozila.size());
                     if (vozilo.getPozicijaURedu() == 49) { //Vozilo prvo u redu za obradu
                         synchronized (mapa) {
-                            if (!"K".equals(vozilo.getOznaka())) {
+                            if (!(mapa[2][vozilo.getPozicijaURedu()] instanceof Kamion)) {
 //                                if(mapa[0][50] == null || mapa[2][50] == null){
 //                                    if(prvi){
 //                                        if(mapa[0][50] == null) {

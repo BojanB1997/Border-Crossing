@@ -1,8 +1,0 @@
-m-Stvarna masa je razlicita od deklarisane.
-Kamion[ID:4]-Broj putnika:3-Deklarisana masa:6.0450277-Stvarna masa:6.432995-Putnici:[Putnik[ID:232]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:233]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:234]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-kv-Vozac je imao nedozvoljene stvari u koferu.
-Kamion[ID:4]-Broj putnika:3-Deklarisana masa:6.0450277-Stvarna masa:6.734479-Putnici:[Putnik[ID:232]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:233]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:234]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-m-Stvarna masa je razlicita od deklarisane.
-Kamion[ID:2]-Broj putnika:3-Deklarisana masa:6.4358473-Stvarna masa:7.7938704-Putnici:[Putnik[ID:227]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:228]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:229]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-kv-Vozac je imao nedozvoljene stvari u koferu.
-Kamion[ID:2]-Broj putnika:3-Deklarisana masa:6.4358473-Stvarna masa:6.5850224-Putnici:[Putnik[ID:227]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:228]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:229]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
