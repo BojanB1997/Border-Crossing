@@ -3,7 +3,7 @@ package Vozila;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Vozilo extends Thread {
+public abstract class Vozilo extends Thread {
     private Integer brojPutnika;
     private Integer pozicijaURedu;
     private Integer vrijemeProcesuiranja;

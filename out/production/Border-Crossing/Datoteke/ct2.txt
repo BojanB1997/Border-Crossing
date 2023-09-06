@@ -1,6 +1,8 @@
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:271]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
 m-Stvarna masa je razlicita od deklarisane.
-Kamion[ID:8]-Broj putnika:3-Deklarisana masa:6.837704-Stvarna masa:7.1591253-Putnici:[Putnik[ID:280]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:281]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:282]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:4]-Broj putnika:3-Deklarisana masa:6.0450277-Stvarna masa:6.432995-Putnici:[Putnik[ID:232]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:233]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:234]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
 kv-Vozac je imao nedozvoljene stvari u koferu.
-Kamion[ID:8]-Broj putnika:3-Deklarisana masa:6.837704-Stvarna masa:6.963405-Putnici:[Putnik[ID:280]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:281]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:282]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:4]-Broj putnika:3-Deklarisana masa:6.0450277-Stvarna masa:6.734479-Putnici:[Putnik[ID:232]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:233]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:234]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+m-Stvarna masa je razlicita od deklarisane.
+Kamion[ID:2]-Broj putnika:3-Deklarisana masa:6.4358473-Stvarna masa:7.7938704-Putnici:[Putnik[ID:227]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:228]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:229]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Kamion[ID:2]-Broj putnika:3-Deklarisana masa:6.4358473-Stvarna masa:6.5850224-Putnici:[Putnik[ID:227]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:228]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:229]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]

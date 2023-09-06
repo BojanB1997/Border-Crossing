@@ -13,6 +13,7 @@ public class PolicijskiTerminal extends Thread{
     public ArrayList<Vozilo> listaVozila = new ArrayList<>();
     public Object[][] mapa;
     public Boolean neMozePreci = false;
+    public Boolean prvi = false;
     public Integer pozicijaURedu;
     public String file;
 
@@ -41,6 +42,17 @@ public class PolicijskiTerminal extends Thread{
                     Vozilo vozilo = voziloIterator.next();
                     neMozePreci = false;
                     if ((vozilo.getPozicijaURedu() == pozicijaURedu) && uFunkciji) {
+                        try {
+                            FileWriter writer = new FileWriter(file, true);
+                            BufferedWriter buff = new BufferedWriter(writer);
+                            buff.write("Auto doslo na terminal.");
+                            buff.newLine();
+                            buff.write(String.valueOf(vozilo));
+                            buff.newLine();
+                            buff.close();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
                         System.out.println("Red: " + vozilo.getPozicijaURedu() + " - " + vozilo);
                         Iterator<Putnik> putnikIterator = vozilo.listaPutnika.iterator();
                         while (putnikIterator.hasNext()) {

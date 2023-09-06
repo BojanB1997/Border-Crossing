@@ -22,6 +22,7 @@ public class Simulacija extends Thread {
     public Boolean neMozePreciPT = false;
     public Boolean neMozePreciCT = false;
     public Boolean neMozePreciPutnik = false;
+    public Boolean prvi = true;
 
     String currentDir = System.getProperty("user.dir");
     String projectPath = File.separator + "src" + File.separator + "Datoteke" + File.separator;
@@ -131,11 +132,30 @@ public class Simulacija extends Thread {
                     if (vozilo.getPozicijaURedu() == 49) { //Vozilo prvo u redu za obradu
                         synchronized (mapa) {
                             if (!"K".equals(vozilo.getOznaka())) {
+//                                if(mapa[0][50] == null || mapa[2][50] == null){
+//                                    if(prvi){
+//                                        if(mapa[0][50] == null) {
+//                                            mapa[0][50] = vozilo.getOznaka();
+//                                            vozilo.setPozicijaURedu(52);
+//                                            mapa[2][49] = null;
+//                                        }
+//                                        prvi = false;
+//                                    }
+//                                    else{
+//                                        if(mapa[2][50] == null) {
+//                                            mapa[2][50] = vozilo.getOznaka();
+//                                            vozilo.setPozicijaURedu(53);
+//                                            mapa[2][49] = null;
+//                                        }
+//                                        prvi = true;
+//                                    }
+//                                }
                                 if (mapa[0][50] == null) {
                                     mapa[0][50] = vozilo.getOznaka();
                                     vozilo.setPozicijaURedu(52);
                                     mapa[2][49] = null;
-                                } else if (mapa[2][50] == null) {
+                                }
+                                else if (mapa[2][50] == null) {
                                     mapa[2][50] = vozilo.getOznaka();
                                     vozilo.setPozicijaURedu(53);
                                     mapa[2][49] = null;
