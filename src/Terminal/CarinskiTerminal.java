@@ -14,7 +14,7 @@ public class CarinskiTerminal extends Thread {
     public Object[][] mapa;
     public Boolean neMozePreciKamion = false;
     public Boolean neMozePreciPutnik = false;
-    public Integer pozicijaURedu;
+    public Integer[] pozicijaURedu = new Integer[2];
     public String file;
     public String uredni;
 
@@ -22,7 +22,12 @@ public class CarinskiTerminal extends Thread {
         super();
         this.listaVozila = listaVozila;
         this.mapa = mapa;
-        this.pozicijaURedu = pozicijaURedu;
+        this.pozicijaURedu[0] = pozicijaURedu;
+        if(this.pozicijaURedu[0] == 54){
+            this.pozicijaURedu[1] = 55;
+        }else{
+            this.pozicijaURedu[1] = -10;
+        }
         this.file = file;
         this.uredni = uredni;
     }
@@ -45,7 +50,7 @@ public class CarinskiTerminal extends Thread {
                     Vozilo vozilo = voziloIterator.next();
                     neMozePreciKamion = false;
                     neMozePreciPutnik = false;
-                    if ((vozilo.getPozicijaURedu() == pozicijaURedu) && uFunkciji) {
+                    if (((vozilo.getPozicijaURedu() == pozicijaURedu[0]) || (vozilo.getPozicijaURedu() == pozicijaURedu[1])) && uFunkciji) {
                         System.out.println("Red: " + vozilo.getPozicijaURedu() + " - " + vozilo);
                         // Cekanje na CT
                         try{
@@ -95,13 +100,17 @@ public class CarinskiTerminal extends Thread {
                             }
                         }
                         if (!(neMozePreciKamion || neMozePreciPutnik)) {
-                            synchronized (mapa) {
-                                if (pozicijaURedu == 51) {
-                                    mapa[3][51] = null;
-                                } else if (pozicijaURedu == 54 || pozicijaURedu == 55) {
-                                    mapa[1][51] = null;
+                            //synchronized (mapa) {
+                                if (pozicijaURedu[0] == 51) {
+                                    synchronized (mapa) {
+                                        mapa[3][51] = null;
+                                    }
+                                } else if (pozicijaURedu[0] == 54 || pozicijaURedu[1] == 55) {
+                                    synchronized (mapa) {
+                                        mapa[1][51] = null;
+                                    }
                                 }
-                            }
+                            //}
                             try {
                                 FileWriter writer = new FileWriter(uredni, true);
                                 BufferedWriter buff = new BufferedWriter(writer);
@@ -117,13 +126,17 @@ public class CarinskiTerminal extends Thread {
                             voziloIterator.remove();
                             System.out.println("Valjda obrisano: " + listaVozila.size());
                         } else {
-                            synchronized (mapa) {
-                                if (pozicijaURedu == 51) {
-                                    mapa[3][51] = null;
-                                } else if (pozicijaURedu == 54 || pozicijaURedu == 55) {
-                                    mapa[1][51] = null;
+                            //synchronized (mapa) {
+                                if (pozicijaURedu[0] == 51) {
+                                    synchronized (mapa) {
+                                        mapa[3][51] = null;
+                                    }
+                                } else if (pozicijaURedu[0] == 54 || pozicijaURedu[1] == 55) {
+                                    synchronized (mapa) {
+                                        mapa[1][51] = null;
+                                    }
                                 }
-                            }
+                            //}
                             try {
                                 FileWriter writer = new FileWriter(file, true);
                                 BufferedWriter buff = new BufferedWriter(writer);
@@ -143,7 +156,7 @@ public class CarinskiTerminal extends Thread {
                 }
             }
             try{
-                sleep(13);
+                sleep(17);
             }catch (InterruptedException e){
                 e.printStackTrace();
             }

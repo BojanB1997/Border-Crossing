@@ -1,48 +1,16 @@
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:75]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:190]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
 kv-Vozac je imao nedozvoljene stvari u koferu.
-Licno vozilo[ID:25]-Broj putnika:4-Putnici:[Putnik[ID:75]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:76]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:77]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:78]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Autobus[ID:3]-Broj putnika:47-Putnici:[Putnik[ID:136]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:137]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:138]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:139]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:140]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:141]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:142]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:143]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:144]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:145]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:146]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:147]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:148]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:149]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:150]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:151]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:152]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:153]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:154]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:155]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:156]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:157]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:158]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:159]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:160]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:161]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:162]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:163]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:164]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:165]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:166]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:167]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:168]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:169]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:170]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:171]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:172]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:173]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:174]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:175]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:176]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:178]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:179]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:180]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:182]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:70]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:60]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:98]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
 kv-Vozac je imao nedozvoljene stvari u koferu.
-Licno vozilo[ID:8]-Broj putnika:2-Putnici:[Putnik[ID:25]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:26]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Licno vozilo[ID:4]-Broj putnika:4-Putnici:[Putnik[ID:13]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:14]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:15]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:16]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
 k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:47]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:262]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:208]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:211]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:222]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:230]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:24]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:58]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-kv-Vozac je imao nedozvoljene stvari u koferu.
-Licno vozilo[ID:32]-Broj putnika:1-Putnici:[Putnik[ID:95]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true]
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:17]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:82]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:108]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:116]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:127]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:136]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:142]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:155]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:161]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:162]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:186]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:61]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
-k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:106]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+Putnik[ID:19]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true

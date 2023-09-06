@@ -83,37 +83,49 @@ public class PolicijskiTerminal extends Thread{
                             }
                         }
                         if (!neMozePreci) {
-                            synchronized (mapa) {
+                           // synchronized (mapa) {
                                 if (pozicijaURedu == 52) {
-                                    if (mapa[1][51] == null) {
-                                        mapa[1][51] = vozilo.getOznaka();
-                                        vozilo.setPozicijaURedu(54);
+                                    synchronized (mapa) {
+                                        if (mapa[1][51] == null) {
+                                            mapa[1][51] = vozilo.getOznaka();
+                                            vozilo.setPozicijaURedu(54);
+                                            mapa[0][50] = null;
+                                        }
+                                    }
+                                } else if (pozicijaURedu == 53) {
+                                    synchronized (mapa) {
+                                        if (mapa[1][51] == null) {
+                                            mapa[1][51] = vozilo.getOznaka();
+                                            vozilo.setPozicijaURedu(55);
+                                            mapa[2][50] = null;
+                                        }
+                                    }
+                                } else if (pozicijaURedu == 50) {
+                                    synchronized (mapa) {
+                                        if (mapa[3][51] == null) {
+                                            mapa[3][51] = vozilo.getOznaka();
+                                            vozilo.setPozicijaURedu(51);
+                                            mapa[4][50] = null;
+                                        }
+                                    }
+                                }
+                           // }
+                        } else {
+                            //synchronized (mapa) {
+                                if (pozicijaURedu == 52) {
+                                    synchronized (mapa) {
                                         mapa[0][50] = null;
                                     }
                                 } else if (pozicijaURedu == 53) {
-                                    if (mapa[1][51] == null) {
-                                        mapa[1][51] = vozilo.getOznaka();
-                                        vozilo.setPozicijaURedu(55);
+                                    synchronized (mapa) {
                                         mapa[2][50] = null;
                                     }
                                 } else if (pozicijaURedu == 50) {
-                                    if (mapa[3][51] == null) {
-                                        mapa[3][51] = vozilo.getOznaka();
-                                        vozilo.setPozicijaURedu(51);
+                                    synchronized (mapa) {
                                         mapa[4][50] = null;
                                     }
                                 }
-                            }
-                        } else {
-                            synchronized (mapa) {
-                                if (pozicijaURedu == 52) {
-                                    mapa[0][50] = null;
-                                } else if (pozicijaURedu == 53) {
-                                    mapa[2][50] = null;
-                                } else if (pozicijaURedu == 50) {
-                                    mapa[4][50] = null;
-                                }
-                            }
+                            //}
                             try {
                                 FileWriter writer = new FileWriter(file, true);
                                 BufferedWriter buff = new BufferedWriter(writer);
@@ -125,14 +137,14 @@ public class PolicijskiTerminal extends Thread{
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
+                            vozilo.kreceSe = false;
                             voziloIterator.remove();
-
                         }
                     }
                 }
             }
             try{
-                sleep(17);
+                sleep(20);
             }catch (InterruptedException e){
                 e.printStackTrace();
             }

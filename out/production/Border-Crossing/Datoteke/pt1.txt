@@ -1,0 +1,32 @@
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:7]-Broj putnika:2-Putnici:[Putnik[ID:26]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:16]-Broj putnika:5-Putnici:[Putnik[ID:51]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:52]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:53]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:54]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:55]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Auto doslo na terminal.
+Licno vozilo[ID:5]-Broj putnika:4-Putnici:[Putnik[ID:17]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:18]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:19]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:20]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]

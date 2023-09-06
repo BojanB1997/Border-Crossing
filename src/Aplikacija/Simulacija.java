@@ -132,24 +132,6 @@ public class Simulacija extends Thread {
                     if (vozilo.getPozicijaURedu() == 49) { //Vozilo prvo u redu za obradu
                         synchronized (mapa) {
                             if (!(mapa[2][vozilo.getPozicijaURedu()] instanceof Kamion)) {
-//                                if(mapa[0][50] == null || mapa[2][50] == null){
-//                                    if(prvi){
-//                                        if(mapa[0][50] == null) {
-//                                            mapa[0][50] = vozilo.getOznaka();
-//                                            vozilo.setPozicijaURedu(52);
-//                                            mapa[2][49] = null;
-//                                        }
-//                                        prvi = false;
-//                                    }
-//                                    else{
-//                                        if(mapa[2][50] == null) {
-//                                            mapa[2][50] = vozilo.getOznaka();
-//                                            vozilo.setPozicijaURedu(53);
-//                                            mapa[2][49] = null;
-//                                        }
-//                                        prvi = true;
-//                                    }
-//                                }
                                 if (mapa[0][50] == null) {
                                     mapa[0][50] = vozilo.getOznaka();
                                     vozilo.setPozicijaURedu(52);
@@ -171,7 +153,7 @@ public class Simulacija extends Thread {
 
                         System.out.println("Izasao iz fora.");
                         try {
-                            sleep(20);
+                            sleep(13);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }

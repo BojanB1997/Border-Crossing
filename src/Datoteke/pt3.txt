@@ -1,20 +1,20 @@
 Auto doslo na terminal.
-Kamion[ID:9]-Broj putnika:2-Deklarisana masa:9.587818-Stvarna masa:8.866463-Putnici:[Putnik[ID:242]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:243]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:2]-Broj putnika:1-Deklarisana masa:5.263987-Stvarna masa:6.7238326-Putnici:[Putnik[ID:290]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
 Auto doslo na terminal.
-Kamion[ID:7]-Broj putnika:1-Deklarisana masa:9.986561-Stvarna masa:4.7078896-Putnici:[Putnik[ID:239]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:3]-Broj putnika:1-Deklarisana masa:11.161071-Stvarna masa:10.147107-Putnici:[Putnik[ID:291]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
 Auto doslo na terminal.
-Kamion[ID:3]-Broj putnika:3-Deklarisana masa:6.7426615-Stvarna masa:5.836048-Putnici:[Putnik[ID:230]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:231]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:232]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:7]-Broj putnika:2-Deklarisana masa:8.570166-Stvarna masa:9.932651-Putnici:[Putnik[ID:296]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:297]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
 Auto doslo na terminal.
-Kamion[ID:5]-Broj putnika:2-Deklarisana masa:10.190844-Stvarna masa:7.290976-Putnici:[Putnik[ID:234]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:235]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:4]-Broj putnika:1-Deklarisana masa:11.211917-Stvarna masa:8.847721-Putnici:[Putnik[ID:292]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
 Auto doslo na terminal.
-Kamion[ID:10]-Broj putnika:1-Deklarisana masa:10.2442875-Stvarna masa:5.2715173-Putnici:[Putnik[ID:244]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:8]-Broj putnika:3-Deklarisana masa:8.579892-Stvarna masa:8.468538-Putnici:[Putnik[ID:298]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:299]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:300]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
 Auto doslo na terminal.
-Kamion[ID:6]-Broj putnika:3-Deklarisana masa:8.656343-Stvarna masa:9.104709-Putnici:[Putnik[ID:236]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:237]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:238]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:5]-Broj putnika:2-Deklarisana masa:5.457449-Stvarna masa:5.3489785-Putnici:[Putnik[ID:293]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:294]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true]
 Auto doslo na terminal.
-Kamion[ID:4]-Broj putnika:1-Deklarisana masa:7.0941334-Stvarna masa:4.9527254-Putnici:[Putnik[ID:233]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:10]-Broj putnika:1-Deklarisana masa:7.1416197-Stvarna masa:4.6537023-Putnici:[Putnik[ID:304]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
 Auto doslo na terminal.
-Kamion[ID:8]-Broj putnika:2-Deklarisana masa:5.7512774-Stvarna masa:5.766066-Putnici:[Putnik[ID:240]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:241]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:9]-Broj putnika:3-Deklarisana masa:8.254614-Stvarna masa:4.4959345-Putnici:[Putnik[ID:301]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:302]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:303]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
 Auto doslo na terminal.
-Kamion[ID:2]-Broj putnika:2-Deklarisana masa:7.1075563-Stvarna masa:8.581697-Putnici:[Putnik[ID:228]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:229]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:6]-Broj putnika:1-Deklarisana masa:11.158051-Stvarna masa:6.2877874-Putnici:[Putnik[ID:295]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
 Auto doslo na terminal.
-Kamion[ID:1]-Broj putnika:2-Deklarisana masa:10.594065-Stvarna masa:7.4757047-Putnici:[Putnik[ID:226]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:227]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:1]-Broj putnika:2-Deklarisana masa:8.371534-Stvarna masa:7.985196-Putnici:[Putnik[ID:288]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:289]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]

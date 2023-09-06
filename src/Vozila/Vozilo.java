@@ -91,7 +91,7 @@ public abstract class Vozilo extends Thread {
                 }
             }
             try {
-                sleep(40);
+                sleep(11);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
