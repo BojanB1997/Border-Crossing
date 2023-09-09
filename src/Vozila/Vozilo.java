@@ -12,6 +12,7 @@ public abstract class Vozilo extends Thread {
     public Object[][] mapa;
     public Boolean kreceSe = true;
     public ArrayList<Putnik> listaPutnika = new ArrayList<Putnik>();
+    public static Integer putnikId = 0;
 
     public Vozilo(Object[][] mapa) {
         super();
@@ -68,12 +69,7 @@ public abstract class Vozilo extends Thread {
         return boja;
     }
 
-    public float getDeklarisanaMasa()
-    {
-        return 0;
-    }
-
-    public float getStvarnaMasa(){
+    public Integer vrijemeCekanjaNaCarini(){
         return 0;
     }
 

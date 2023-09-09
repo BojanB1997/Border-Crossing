@@ -1,5 +1,7 @@
 package Terminal;
 
+import Vozila.LicnoVozilo;
+import Vozila.MasaIDokumentacija;
 import Vozila.Putnik;
 import Vozila.Vozilo;
 
@@ -54,24 +56,31 @@ public class CarinskiTerminal extends Thread {
                         System.out.println("Red: " + vozilo.getPozicijaURedu() + " - " + vozilo);
                         // Cekanje na CT
                         try{
-                            sleep(11);
-                        }catch(InterruptedException  e){
+                            sleep(vozilo.vrijemeCekanjaNaCarini());
+                        }catch(InterruptedException e){
                             e.printStackTrace();
                         }
-                        if (vozilo.getStvarnaMasa() > vozilo.getDeklarisanaMasa()) {
-                            neMozePreciKamion = true;
-                            try {
-                                FileWriter writer = new FileWriter(file, true);
-                                BufferedWriter buff = new BufferedWriter(writer);
-                                buff.write("m-Stvarna masa je razlicita od deklarisane.");
-                                buff.newLine();
-                                buff.write(String.valueOf(vozilo));
-                                buff.newLine();
-                                buff.close();
-                            } catch (Exception e) {
-                                e.printStackTrace();
+                        if(vozilo instanceof MasaIDokumentacija) {
+                            //Kreiranje dokumentacije
+                            MasaIDokumentacija kamion = (MasaIDokumentacija) vozilo;
+                            if (!kamion.isImaDokumentaciju() && kamion.isPotrebnaDokumentacija()) {
+                                kamion.setImaDokumentaciju(true);
                             }
-                            System.out.println("Masa nije uredna.");
+                            if (kamion.getStvarnaMasa() > kamion.getDeklarisanaMasa()) {
+                                neMozePreciKamion = true;
+                                try {
+                                    FileWriter writer = new FileWriter(file, true);
+                                    BufferedWriter buff = new BufferedWriter(writer);
+                                    buff.write("m-Stvarna masa je razlicita od deklarisane.");
+                                    buff.newLine();
+                                    buff.write(String.valueOf(vozilo));
+                                    buff.newLine();
+                                    buff.close();
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+                                System.out.println("Masa nije uredna.");
+                            }
                         }
                         if (!neMozePreciKamion) {
                             Iterator<Putnik> putnikIterator = vozilo.listaPutnika.iterator();

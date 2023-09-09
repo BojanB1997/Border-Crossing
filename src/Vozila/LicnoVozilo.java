@@ -19,7 +19,8 @@ public class LicnoVozilo extends Vozilo{
         this.setOznaka("LV");
         this.setBoja("tomato");
         for(int i = 0; i < brojPutnika; i++){
-            this.listaPutnika.add(new Putnik());
+            this.listaPutnika.add(new Putnik(putnikId));
+            putnikId++;
         }
         this.listaPutnika.get(0).setJeVozac(true);
     }
@@ -27,6 +28,11 @@ public class LicnoVozilo extends Vozilo{
 
     public Integer getLVId() {
         return lVid;
+    }
+
+    @Override
+    public Integer vrijemeCekanjaNaCarini(){
+        return 2000 + this.brojPutnika*this.getVrijemeProcesuiranja();
     }
 
     @Override

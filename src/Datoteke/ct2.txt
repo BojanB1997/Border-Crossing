@@ -1,10 +1,16 @@
-m-Stvarna masa je razlicita od deklarisane.
-Kamion[ID:2]-Broj putnika:1-Deklarisana masa:5.263987-Stvarna masa:6.6772113-Putnici:[Putnik[ID:290]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
 kv-Vozac je imao nedozvoljene stvari u koferu.
-Kamion[ID:2]-Broj putnika:1-Deklarisana masa:5.263987-Stvarna masa:6.501084-Putnici:[Putnik[ID:290]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
-m-Stvarna masa je razlicita od deklarisane.
-Kamion[ID:7]-Broj putnika:2-Deklarisana masa:8.570166-Stvarna masa:11.091631-Putnici:[Putnik[ID:296]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:297]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-kv-Vozac je imao nedozvoljene stvari u koferu.
-Kamion[ID:7]-Broj putnika:2-Deklarisana masa:8.570166-Stvarna masa:10.351556-Putnici:[Putnik[ID:296]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:297]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:8]-Broj putnika:1-Deklarisana masa:5.753642-Stvarna masa:4.775744-Putnici:[Putnik[ID:281]-Vozac:true-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:true]-Potrebna carinska dokumentacija:false-Ima dokumentaciju:false
 k-Putnik je imao nedozvoljene stvari u koferu.
-Putnik[ID:294]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+Putnik[ID:275]-Vozac:false-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:true
+m-Stvarna masa je razlicita od deklarisane.
+Kamion[ID:6]-Broj putnika:3-Deklarisana masa:5.751869-Stvarna masa:5.906886-Putnici:[Putnik[ID:277]-Vozac:true-Ima kofer:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:278]-Vozac:false-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:279]-Vozac:false-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false]-Potrebna carinska dokumentacija:false-Ima dokumentaciju:false
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Kamion[ID:6]-Broj putnika:3-Deklarisana masa:5.751869-Stvarna masa:7.4744334-Putnici:[Putnik[ID:277]-Vozac:true-Ima kofer:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:278]-Vozac:false-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:279]-Vozac:false-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false]-Potrebna carinska dokumentacija:false-Ima dokumentaciju:false
+m-Stvarna masa je razlicita od deklarisane.
+Kamion[ID:10]-Broj putnika:3-Deklarisana masa:8.8307705-Stvarna masa:9.427317-Putnici:[Putnik[ID:284]-Vozac:true-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:285]-Vozac:false-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:286]-Vozac:false-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false]-Potrebna carinska dokumentacija:true-Ima dokumentaciju:true
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Kamion[ID:10]-Broj putnika:3-Deklarisana masa:8.8307705-Stvarna masa:10.744098-Putnici:[Putnik[ID:284]-Vozac:true-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:285]-Vozac:false-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:286]-Vozac:false-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false]-Potrebna carinska dokumentacija:true-Ima dokumentaciju:true
+m-Stvarna masa je razlicita od deklarisane.
+Kamion[ID:4]-Broj putnika:2-Deklarisana masa:7.6125484-Stvarna masa:7.6916666-Putnici:[Putnik[ID:272]-Vozac:true-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:273]-Vozac:false-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false]-Potrebna carinska dokumentacija:true-Ima dokumentaciju:true
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Kamion[ID:4]-Broj putnika:2-Deklarisana masa:7.6125484-Stvarna masa:8.707246-Putnici:[Putnik[ID:272]-Vozac:true-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:273]-Vozac:false-Ima kofer:true-Nesipravni dokumenti:false-Nedopustene stvari:false]-Potrebna carinska dokumentacija:true-Ima dokumentaciju:true

@@ -6,8 +6,10 @@ import Vozila.*;
 import javafx.scene.layout.GridPane;
 
 import java.io.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.Iterator;
 
 public class Simulacija extends Thread {
@@ -23,6 +25,7 @@ public class Simulacija extends Thread {
     public Boolean neMozePreciCT = false;
     public Boolean neMozePreciPutnik = false;
     public Boolean prvi = true;
+    public String vrijeme;
 
     String currentDir = System.getProperty("user.dir");
     String projectPath = File.separator + "src" + File.separator + "Datoteke" + File.separator;
@@ -35,6 +38,10 @@ public class Simulacija extends Thread {
 
     @Override
     public void run() {
+        Date trenutnoVrijeme = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy hh_mm_ss");
+        vrijeme = format.format(trenutnoVrijeme);
+
         createListaVozila();
         for (int i = 0; i < 50; i++) {
             listaVozila.get(i).setPozicijaURedu(i);
@@ -47,9 +54,9 @@ public class Simulacija extends Thread {
         String pt1txt = currentDir + projectPath + "pt1.txt";
         String pt2txt = currentDir + projectPath + "pt2.txt";
         String pt3txt = currentDir + projectPath + "pt3.txt";
-        PolicijskiTerminal pt1 = new PolicijskiTerminal(listaVozila, mapa, 53, pt1txt);
-        PolicijskiTerminal pt2 = new PolicijskiTerminal(listaVozila, mapa, 52, pt2txt);
-        PolicijskiTerminal pt3 = new PolicijskiTerminal(listaVozila, mapa, 50, pt3txt);
+        PolicijskiTerminal pt1 = new PolicijskiTerminal(listaVozila, mapa, 53, pt1txt, vrijeme);
+        PolicijskiTerminal pt2 = new PolicijskiTerminal(listaVozila, mapa, 52, pt2txt, vrijeme);
+        PolicijskiTerminal pt3 = new PolicijskiTerminal(listaVozila, mapa, 50, pt3txt, vrijeme);
 
         String ct1txt = currentDir + projectPath + "ct1.txt";
         String ct2txt = currentDir + projectPath + "ct2.txt";
@@ -64,6 +71,9 @@ public class Simulacija extends Thread {
         File evidencijaCT1 = new File(currentDir + projectPath + "ct1.txt");
         File evidencijaCT2 = new File(currentDir + projectPath + "ct2.txt");
         File evidencijaUrednih = new File(currentDir + projectPath + "uredni.txt");
+
+        FileWatcher fileWatcher = new FileWatcher(pt1, pt2, pt3, ct1, ct2);
+        fileWatcher.start();
 
         try {
             FileWriter isprazniPT1 = new FileWriter(evidencijaPT1);
@@ -96,39 +106,37 @@ public class Simulacija extends Thread {
         ct1.start();
         ct2.start();
         do {
-            try {
-                FileReader read = new FileReader(currentDir + projectPath + "config.txt");
-                BufferedReader reader = new BufferedReader(read);
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    String[] linija = line.split("-");
-                    if (linija.length == 2) {
-                        String key = linija[0];
-                        String value = linija[1];
-                        Boolean radi = "True".equalsIgnoreCase(value);
-                        if ("PT1".equalsIgnoreCase(key)) {
-                            pt1.setuFunkciji(radi);
-                        } else if ("PT2".equalsIgnoreCase(key)) {
-                            pt2.setuFunkciji(radi);
-                        } else if ("PT3".equalsIgnoreCase(key)) {
-                            pt3.setuFunkciji(radi);
-                        } else if ("CT1".equalsIgnoreCase(key)) {
-                            ct1.setuFunkciji(radi);
-                        } else if ("CT2".equalsIgnoreCase(key)) {
-                            ct2.setuFunkciji(radi);
-                        }
-                    }
-                }
-                reader.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+//            try {
+//                FileReader read = new FileReader(currentDir + projectPath + "config.txt");
+//                BufferedReader reader = new BufferedReader(read);
+//                String line;
+//                while ((line = reader.readLine()) != null) {
+//                    String[] linija = line.split("-");
+//                    if (linija.length == 2) {
+//                        String key = linija[0];
+//                        String value = linija[1];
+//                        Boolean radi = "True".equalsIgnoreCase(value);
+//                        if ("PT1".equalsIgnoreCase(key)) {
+//                            pt1.setuFunkciji(radi);
+//                        } else if ("PT2".equalsIgnoreCase(key)) {
+//                            pt2.setuFunkciji(radi);
+//                        } else if ("PT3".equalsIgnoreCase(key)) {
+//                            pt3.setuFunkciji(radi);
+//                        } else if ("CT1".equalsIgnoreCase(key)) {
+//                            ct1.setuFunkciji(radi);
+//                        } else if ("CT2".equalsIgnoreCase(key)) {
+//                            ct2.setuFunkciji(radi);
+//                        }
+//                    }
+//                }
+//                reader.close();
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
             synchronized (listaVozila) {
                 Iterator<Vozilo> voziloIterator = listaVozila.iterator();
                 while (voziloIterator.hasNext()) {
                     Vozilo vozilo = voziloIterator.next();
-                    //System.out.println("Vozilo " + vozilo + "- Pozicija u redu:" + vozilo.getPozicijaURedu());
-                    //System.out.println("Velicina liste: " + listaVozila.size());
                     if (vozilo.getPozicijaURedu() == 49) { //Vozilo prvo u redu za obradu
                         synchronized (mapa) {
                             if (!(mapa[2][vozilo.getPozicijaURedu()] instanceof Kamion)) {
@@ -162,6 +170,34 @@ public class Simulacija extends Thread {
             }
         } while (!listaVozila.isEmpty());
         System.out.println("Svi presli granicu.");
+
+        try {
+            pt1.join();
+            pt2.join();
+            pt3.join();
+        }catch(InterruptedException e){
+            e.printStackTrace();
+        }
+        String currentDir = System.getProperty("user.dir");
+        String projectPath = File.separator + "src" + File.separator + "Serijalizacija" + File.separator;
+        try {
+            FileInputStream fileIn = new FileInputStream(currentDir + projectPath + vrijeme);
+            ObjectInputStream in = new ObjectInputStream(fileIn);
+
+            ArrayList<Putnik> putnici = (ArrayList<Putnik>) in.readObject();
+
+            System.out.println("Citanje prije deserijalizacije.\n Duzina liste: " + putnici.size());
+            for (Putnik putnik : putnici) {
+                System.out.println("Citanje.");
+                System.out.println(String.valueOf(putnik));
+            }
+            System.out.println(putnici);
+            System.out.println("Citanje gotovo.");
+            in.close();
+            fileIn.close();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public void createListaVozila() {

@@ -1,5 +1,6 @@
 package Aplikacija;
 
+import Vozila.Vozilo;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -9,10 +10,14 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main extends Application {
 
@@ -128,6 +133,11 @@ public class Main extends Application {
         mainStage.setScene(mainScene);
         mainStage.show();
 
+        Stage buttonStage = new Stage();
+        BorderPane buttonBP = new BorderPane();
+        VBox buttonVB = new VBox();
+        Scene buttonScene = new Scene(buttonBP);
+
         startButton.setOnAction(e -> {
             Simulacija simulacija = new Simulacija(centerGP, redGP);
             if(startCounter == 0) {
@@ -142,6 +152,93 @@ public class Main extends Application {
             red.setOnAction(f -> {
                 redStage.setScene(redScene);
                 redStage.show();
+            });
+            redVozilaMain.get(0).setOnAction(f -> {
+                buttonVB.getChildren().clear();
+                List<String> dijelovi = new ArrayList<>();
+                for(Vozilo vozilo: simulacija.listaVozila){
+                    if(vozilo.getPozicijaURedu() == 45){
+                        String podaci = String.valueOf(vozilo);
+                        dijelovi = Arrays.asList(podaci.split("-"));
+                        for(String dio : dijelovi){
+                            buttonVB.getChildren().add(new Label(dio));
+                        }
+                        break;
+                    }
+                }
+                buttonBP.setCenter(buttonVB);
+                buttonStage.setScene(buttonScene);
+                buttonStage.show();
+            });
+            redVozilaMain.get(1).setOnAction(f -> {
+                buttonVB.getChildren().clear();
+                List<String> dijelovi = new ArrayList<>();
+                for(Vozilo vozilo: simulacija.listaVozila){
+                    if(vozilo.getPozicijaURedu() == 46){
+                        String podaci = String.valueOf(vozilo);
+                        dijelovi = Arrays.asList(podaci.split("-"));
+                        for(String dio : dijelovi){
+                            buttonVB.getChildren().add(new Label(dio));
+                        }
+                        break;
+                    }
+                }
+                buttonBP.setCenter(buttonVB);
+                buttonStage.setScene(buttonScene);
+                buttonStage.show();
+            });
+            redVozilaMain.get(2).setOnAction(f -> {
+                buttonVB.getChildren().clear();
+                List<String> dijelovi = new ArrayList<>();
+                for(Vozilo vozilo: simulacija.listaVozila){
+                    if(vozilo.getPozicijaURedu() == 47){
+                        String podaci = String.valueOf(vozilo);
+                        dijelovi = Arrays.asList(podaci.split("-"));
+                        for(String dio : dijelovi){
+                            buttonVB.getChildren().add(new Label(dio));
+                        }
+                        break;
+                    }
+                }
+                buttonBP.setCenter(buttonVB);
+                buttonStage.setScene(buttonScene);
+                buttonStage.show();
+            });
+            redVozilaMain.get(3).setOnAction(f -> {
+                buttonVB.getChildren().clear();
+                List<String> dijelovi = new ArrayList<>();
+                for(Vozilo vozilo: simulacija.listaVozila){
+                    if(vozilo.getPozicijaURedu() == 48){
+                        String podaci = String.valueOf(vozilo);
+                        dijelovi = Arrays.asList(podaci.split("-"));
+                        for(String dio : dijelovi){
+                            buttonVB.getChildren().add(new Label(dio));
+                        }
+                        break;
+                    }
+                }
+                buttonBP.setCenter(buttonVB);
+                buttonStage.setScene(buttonScene);
+                buttonStage.show();
+            });
+            redVozilaMain.get(4).setOnAction(f -> {
+                buttonVB.getChildren().clear();
+                List<String> dijelovi = new ArrayList<>();
+                synchronized (simulacija.listaVozila) {
+                    for (Vozilo vozilo : simulacija.listaVozila) {
+                        if (vozilo.getPozicijaURedu() == 49) {
+                            String podaci = String.valueOf(vozilo);
+                            dijelovi = Arrays.asList(podaci.split("-"));
+                            for (String dio : dijelovi) {
+                                buttonVB.getChildren().add(new Label(dio));
+                            }
+                            break;
+                        }
+                    }
+                }
+                buttonBP.setCenter(buttonVB);
+                buttonStage.setScene(buttonScene);
+                buttonStage.show();
             });
         });
 

@@ -19,13 +19,19 @@ public class Autobus extends Vozilo{
         this.setOznaka("A");
         this.setBoja("cadetblue");
         for(int i = 0; i < brojPutnika; i++){
-            this.listaPutnika.add(new Putnik());
+            this.listaPutnika.add(new Putnik(putnikId));
+            putnikId++;
         }
         this.listaPutnika.get(0).setJeVozac(true);
     }
 
     public Integer getaId() {
         return aId;
+    }
+
+    @Override
+    public Integer vrijemeCekanjaNaCarini(){
+        return this.brojPutnika*this.getVrijemeProcesuiranja();
     }
 
     @Override

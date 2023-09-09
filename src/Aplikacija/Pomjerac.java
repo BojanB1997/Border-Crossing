@@ -1,5 +1,6 @@
 package Aplikacija;
 
+import Vozila.Putnik;
 import Vozila.Vozilo;
 import javafx.application.Platform;
 import javafx.beans.Observable;
@@ -11,6 +12,10 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
 public class Pomjerac extends Thread {
