@@ -1,18 +1,19 @@
 package Aplikacija;
 
+import Vozila.Vozilo;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
+import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main extends Application {
 
@@ -20,6 +21,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        MojLogger.setup();
+
         Stage mainStage = new Stage();
         mainStage.setTitle("Border Crossing");
         mainStage.setHeight(700);
@@ -120,6 +123,36 @@ public class Main extends Application {
         centerGP.setPadding(new Insets(0, 150, 0, 150));
         mainBP.setCenter(centerGP);
 
+
+        HBox spacer = new HBox();
+        spacer.setHgrow(spacer, Priority.ALWAYS);
+
+        HBox dnoHB = new HBox(10);
+
+        Label vrijeme = new Label("Vrijeme: ");
+        vrijeme.setFont(new Font("Arial", 14));
+        vrijeme.setAlignment(Pos.CENTER_RIGHT);
+        vrijeme.setPadding(new Insets(0, 50, 10, 0));
+
+        VBox opisVB = new VBox(10);
+        opisVB.setAlignment(Pos.CENTER);
+        Label opis = new Label("Opis dogadjaja:");
+        opis.setFont(new Font("Arial", 14));
+        Label opisDogadjaja = new Label("Test.");
+        opisDogadjaja.setFont(new Font("Arial", 14));
+        opisVB.getChildren().addAll(opis, opisDogadjaja);
+        opisVB.setPadding(new Insets(0, 0, 10, 650));
+
+        opisVB.setAlignment(Pos.CENTER);
+        //BorderPane.setAlignment(opisVB, Pos.CENTER);
+        //BorderPane.setAlignment(dnoHB, Pos.CENTER);
+
+        dnoHB.getChildren().addAll(opisVB, spacer, vrijeme);
+        dnoHB.setAlignment(Pos.CENTER);
+
+        mainBP.setBottom(dnoHB);
+
+
         redGP.setVgap(3);
         redGP.setHgap(2);
         redGP.setPadding(new Insets(0, 0, 10, 10));
@@ -128,12 +161,19 @@ public class Main extends Application {
         mainStage.setScene(mainScene);
         mainStage.show();
 
+        Stage buttonStage = new Stage();
+        BorderPane buttonBP = new BorderPane();
+        VBox buttonVB = new VBox();
+        Scene buttonScene = new Scene(buttonBP);
+
         startButton.setOnAction(e -> {
-            Simulacija simulacija = new Simulacija(centerGP, redGP);
+            Simulacija simulacija = new Simulacija(centerGP, redGP, opisDogadjaja);
+            Tajmer tajmer = new Tajmer(vrijeme);
             if(startCounter == 0) {
                 startButton.setText("STOP");
                 startCounter = 1;
                 simulacija.start();
+                tajmer.start();
             }
             else{
                 startButton.setText("START");
@@ -142,6 +182,93 @@ public class Main extends Application {
             red.setOnAction(f -> {
                 redStage.setScene(redScene);
                 redStage.show();
+            });
+            redVozilaMain.get(0).setOnAction(f -> {
+                buttonVB.getChildren().clear();
+                List<String> dijelovi = new ArrayList<>();
+                for(Vozilo vozilo: simulacija.listaVozila){
+                    if(vozilo.getPozicijaURedu() == 45){
+                        String podaci = String.valueOf(vozilo);
+                        dijelovi = Arrays.asList(podaci.split("-"));
+                        for(String dio : dijelovi){
+                            buttonVB.getChildren().add(new Label(dio));
+                        }
+                        break;
+                    }
+                }
+                buttonBP.setCenter(buttonVB);
+                buttonStage.setScene(buttonScene);
+                buttonStage.show();
+            });
+            redVozilaMain.get(1).setOnAction(f -> {
+                buttonVB.getChildren().clear();
+                List<String> dijelovi = new ArrayList<>();
+                for(Vozilo vozilo: simulacija.listaVozila){
+                    if(vozilo.getPozicijaURedu() == 46){
+                        String podaci = String.valueOf(vozilo);
+                        dijelovi = Arrays.asList(podaci.split("-"));
+                        for(String dio : dijelovi){
+                            buttonVB.getChildren().add(new Label(dio));
+                        }
+                        break;
+                    }
+                }
+                buttonBP.setCenter(buttonVB);
+                buttonStage.setScene(buttonScene);
+                buttonStage.show();
+            });
+            redVozilaMain.get(2).setOnAction(f -> {
+                buttonVB.getChildren().clear();
+                List<String> dijelovi = new ArrayList<>();
+                for(Vozilo vozilo: simulacija.listaVozila){
+                    if(vozilo.getPozicijaURedu() == 47){
+                        String podaci = String.valueOf(vozilo);
+                        dijelovi = Arrays.asList(podaci.split("-"));
+                        for(String dio : dijelovi){
+                            buttonVB.getChildren().add(new Label(dio));
+                        }
+                        break;
+                    }
+                }
+                buttonBP.setCenter(buttonVB);
+                buttonStage.setScene(buttonScene);
+                buttonStage.show();
+            });
+            redVozilaMain.get(3).setOnAction(f -> {
+                buttonVB.getChildren().clear();
+                List<String> dijelovi = new ArrayList<>();
+                for(Vozilo vozilo: simulacija.listaVozila){
+                    if(vozilo.getPozicijaURedu() == 48){
+                        String podaci = String.valueOf(vozilo);
+                        dijelovi = Arrays.asList(podaci.split("-"));
+                        for(String dio : dijelovi){
+                            buttonVB.getChildren().add(new Label(dio));
+                        }
+                        break;
+                    }
+                }
+                buttonBP.setCenter(buttonVB);
+                buttonStage.setScene(buttonScene);
+                buttonStage.show();
+            });
+            redVozilaMain.get(4).setOnAction(f -> {
+                buttonVB.getChildren().clear();
+                List<String> dijelovi = new ArrayList<>();
+                synchronized (simulacija.listaVozila) {
+                    for (Vozilo vozilo : simulacija.listaVozila) {
+                        if (vozilo.getPozicijaURedu() == 49) {
+                            String podaci = String.valueOf(vozilo);
+                            dijelovi = Arrays.asList(podaci.split("-"));
+                            for (String dio : dijelovi) {
+                                buttonVB.getChildren().add(new Label(dio));
+                            }
+                            break;
+                        }
+                    }
+                }
+                buttonBP.setCenter(buttonVB);
+                buttonStage.setScene(buttonScene);
+                buttonStage.show();
             });
         });
 

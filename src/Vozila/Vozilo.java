@@ -1,9 +1,14 @@
 package Vozila;
 
+import Aplikacija.MojLogger;
+
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.logging.Level;
 
-public class Vozilo extends Thread {
+import static Aplikacija.Pomjerac.sinhro;
+
+public abstract class Vozilo extends Thread {
     private Integer brojPutnika;
     private Integer pozicijaURedu;
     private Integer vrijemeProcesuiranja;
@@ -12,6 +17,8 @@ public class Vozilo extends Thread {
     public Object[][] mapa;
     public Boolean kreceSe = true;
     public ArrayList<Putnik> listaPutnika = new ArrayList<Putnik>();
+    public static Integer putnikId = 0;
+    public ArrayList<Integer> listaPozicija = new ArrayList<>();
 
     public Vozilo(Object[][] mapa) {
         super();
@@ -68,12 +75,7 @@ public class Vozilo extends Thread {
         return boja;
     }
 
-    public float getDeklarisanaMasa()
-    {
-        return 0;
-    }
-
-    public float getStvarnaMasa(){
+    public Integer vrijemeCekanjaNaCarini() {
         return 0;
     }
 
@@ -82,18 +84,26 @@ public class Vozilo extends Thread {
 
         while (kreceSe) {
             if (getPozicijaURedu() < 49) {
-                synchronized (mapa) {
-                    if (mapa[2][getPozicijaURedu() + 1] == null) {
-                        mapa[2][getPozicijaURedu() + 1] = getOznaka();
-                        mapa[2][getPozicijaURedu()] = null;
-                        setPozicijaURedu(getPozicijaURedu() + 1);
+                synchronized (sinhro) {
+                    synchronized (mapa) {
+                        if (mapa[2][getPozicijaURedu() + 1] == null) {
+                            mapa[2][getPozicijaURedu() + 1] = this;
+                            mapa[2][getPozicijaURedu()] = null;
+                            setPozicijaURedu(getPozicijaURedu() + 1);
+                            listaPozicija.add(getPozicijaURedu());
+                            try {
+                                sleep(10);
+                            } catch (InterruptedException e) {
+                                MojLogger.log(Level.SEVERE, "Spava u kretanju u redu.", e);
+                            }
+                        }
                     }
                 }
             }
             try {
-                sleep(40);
+                sleep(200);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                MojLogger.log(Level.SEVERE, "Uspavljivanje u klasi Vozilo.", e);
             }
         }
     }
