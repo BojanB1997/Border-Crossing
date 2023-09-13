@@ -2,8 +2,9 @@ package Vozila;
 
 import java.util.Random;
 
-public class Kamion extends Vozilo{
+public class Kamion extends Vozilo implements MasaIDokumentacija{
     private Boolean potrebnaDokumentacija;
+    private Boolean imaDokumentaciju = false;
     private float deklarisanaMasa;
     private float stvarnaMasa;
     private Boolean vecaStvarnaMasa;
@@ -25,14 +26,18 @@ public class Kamion extends Vozilo{
         this.setOznaka("K");
         this.setBoja("yellow");
         for(int i = 0; i < brojPutnika; i++){
-            this.listaPutnika.add(new Putnik());
+            this.listaPutnika.add(new Putnik(putnikId));
+            putnikId++;
         }
         this.listaPutnika.get(0).setJeVozac(true);
         this.setPotrebnaDokumentacija(isVjerovatnoca(50));
         this.setDeklarisanaMasa(min + random.nextFloat() * (max - min));
         this.setVecaStvarnaMasa(isVjerovatnoca(20));
         if(getVecaStvarnaMasa()){
-            this.setStvarnaMasa(getDeklarisanaMasa() * (random.nextFloat() * 0.3f));
+            float procenat = random.nextFloat() * 0.3f;
+            setStvarnaMasa(getDeklarisanaMasa() * (1.0f + procenat));
+        }else{
+            setStvarnaMasa(4.0f + random.nextFloat() * (getDeklarisanaMasa() - 4.0f));
         }
     }
 
@@ -40,7 +45,8 @@ public class Kamion extends Vozilo{
         this.potrebnaDokumentacija = potrebnaDokumentacija;
     }
 
-    public Boolean getPotrebnaDokumentacija() {
+    @Override
+    public Boolean isPotrebnaDokumentacija() {
         return potrebnaDokumentacija;
     }
 
@@ -75,8 +81,27 @@ public class Kamion extends Vozilo{
     }
 
     @Override
-    public String toString(){
+    public void setImaDokumentaciju(Boolean imaDokumentaciju) {
+        this.imaDokumentaciju = imaDokumentaciju;
+    }
+
+    @Override
+    public Boolean isImaDokumentaciju() {
+        return imaDokumentaciju;
+    }
+
+    @Override
+    public Integer vrijemeCekanjaNaCarini(){
+        return 500 + this.brojPutnika*this.getVrijemeProcesuiranja();
+    }
+
+    public String upisiKamionUFajl(){
         return "Kamion[ID:" + getkId() + "]-Broj putnika:" + brojPutnika + "-Deklarisana masa:" + getDeklarisanaMasa()
-                + "-Stvarna masa:" + getStvarnaMasa() + "-Putnici:" + listaPutnika;
+                + "-Stvarna masa:" + getStvarnaMasa() + "\n-Putnici:" + listaPutnika + "\n-Potrebna carinska dokumentacija:"
+                + isPotrebnaDokumentacija() + "-Ima dokumentaciju:" + isImaDokumentaciju();
+    }
+    @Override
+    public String toString(){
+        return "Kamion[ID:" + getkId() + "]";
     }
 }
