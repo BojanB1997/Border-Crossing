@@ -1,0 +1,4 @@
+m-Stvarna masa je razlicita od deklarisane.
+Kamion[ID:3]
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Kamion[ID:3]

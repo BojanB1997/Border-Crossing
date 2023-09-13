@@ -1,46 +1,136 @@
+VOZILO NA TERMINALU
+Licno vozilo[ID:24]-Broj putnika:3
+-Putnici:[Putnik[ID:72], Putnik[ID:73], Putnik[ID:74]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:9]-Broj putnika:4
+-Putnici:[Putnik[ID:24], Putnik[ID:25], Putnik[ID:26], Putnik[ID:27]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:23]-Broj putnika:3
+-Putnici:[Putnik[ID:69], Putnik[ID:70], Putnik[ID:71]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:29]-Broj putnika:5
+-Putnici:[Putnik[ID:86], Putnik[ID:87], Putnik[ID:88], Putnik[ID:89], Putnik[ID:90]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:31]-Broj putnika:5
+-Putnici:[Putnik[ID:92], Putnik[ID:93], Putnik[ID:94], Putnik[ID:95], Putnik[ID:96]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:21]-Broj putnika:5
+-Putnici:[Putnik[ID:62], Putnik[ID:63], Putnik[ID:64], Putnik[ID:65], Putnik[ID:66]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:25]-Broj putnika:2
+-Putnici:[Putnik[ID:75], Putnik[ID:76]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:8]-Broj putnika:4
+-Putnici:[Putnik[ID:20], Putnik[ID:21], Putnik[ID:22], Putnik[ID:23]]
+VOZILO NA TERMINALU
+Autobus[ID:1]-Broj putnika:41
+-Putnici:[Putnik[ID:109], Putnik[ID:110], Putnik[ID:111], Putnik[ID:112], Putnik[ID:113], Putnik[ID:114], Putnik[ID:115], Putnik[ID:116], Putnik[ID:117], Putnik[ID:118], Putnik[ID:119], Putnik[ID:120], Putnik[ID:121], Putnik[ID:122], Putnik[ID:123], Putnik[ID:124], Putnik[ID:125], Putnik[ID:126], Putnik[ID:127], Putnik[ID:128], Putnik[ID:129], Putnik[ID:130], Putnik[ID:131], Putnik[ID:132], Putnik[ID:133], Putnik[ID:134], Putnik[ID:135], Putnik[ID:136], Putnik[ID:137], Putnik[ID:138], Putnik[ID:139], Putnik[ID:140], Putnik[ID:141], Putnik[ID:142], Putnik[ID:143], Putnik[ID:144], Putnik[ID:145], Putnik[ID:146], Putnik[ID:147], Putnik[ID:148], Putnik[ID:149]]
+p-Problem putnika sa dokumentacijom.
+Putnik[ID:128]
+VOZILO NA TERMINALU
+Licno vozilo[ID:19]-Broj putnika:3
+-Putnici:[Putnik[ID:58], Putnik[ID:59], Putnik[ID:60]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:19]-Broj putnika:3
+-Putnici:[Putnik[ID:58], Putnik[ID:59], Putnik[ID:60]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:17]-Broj putnika:4
+-Putnici:[Putnik[ID:53], Putnik[ID:54], Putnik[ID:55], Putnik[ID:56]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:7]-Broj putnika:2
+-Putnici:[Putnik[ID:18], Putnik[ID:19]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:33]-Broj putnika:4
+-Putnici:[Putnik[ID:102], Putnik[ID:103], Putnik[ID:104], Putnik[ID:105]]
+p-Problem putnika sa dokumentacijom.
+Putnik[ID:104]
+p-Problem putnika sa dokumentacijom.
+Putnik[ID:105]
+VOZILO NA TERMINALU
+Licno vozilo[ID:18]-Broj putnika:1
+-Putnici:[Putnik[ID:57]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:5]-Broj putnika:5
+-Putnici:[Putnik[ID:10], Putnik[ID:11], Putnik[ID:12], Putnik[ID:13], Putnik[ID:14]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:12]-Broj putnika:3
+-Putnici:[Putnik[ID:36], Putnik[ID:37], Putnik[ID:38]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:16]-Broj putnika:5
+-Putnici:[Putnik[ID:48], Putnik[ID:49], Putnik[ID:50], Putnik[ID:51], Putnik[ID:52]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:14]-Broj putnika:3
+-Putnici:[Putnik[ID:41], Putnik[ID:42], Putnik[ID:43]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:14]-Broj putnika:3
+-Putnici:[Putnik[ID:41], Putnik[ID:42], Putnik[ID:43]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:1]-Broj putnika:5
+-Putnici:[Putnik[ID:0], Putnik[ID:1], Putnik[ID:2], Putnik[ID:3], Putnik[ID:4]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:10]-Broj putnika:3
+-Putnici:[Putnik[ID:28], Putnik[ID:29], Putnik[ID:30]]
+VOZILO NA TERMINALU
+Autobus[ID:4]-Broj putnika:43
+-Putnici:[Putnik[ID:211], Putnik[ID:212], Putnik[ID:213], Putnik[ID:214], Putnik[ID:215], Putnik[ID:216], Putnik[ID:217], Putnik[ID:218], Putnik[ID:219], Putnik[ID:220], Putnik[ID:221], Putnik[ID:222], Putnik[ID:223], Putnik[ID:224], Putnik[ID:225], Putnik[ID:226], Putnik[ID:227], Putnik[ID:228], Putnik[ID:229], Putnik[ID:230], Putnik[ID:231], Putnik[ID:232], Putnik[ID:233], Putnik[ID:234], Putnik[ID:235], Putnik[ID:236], Putnik[ID:237], Putnik[ID:238], Putnik[ID:239], Putnik[ID:240], Putnik[ID:241], Putnik[ID:242], Putnik[ID:243], Putnik[ID:244], Putnik[ID:245], Putnik[ID:246], Putnik[ID:247], Putnik[ID:248], Putnik[ID:249], Putnik[ID:250], Putnik[ID:251], Putnik[ID:252], Putnik[ID:253]]
+VOZILO NA TERMINALU
+Autobus[ID:3]-Broj putnika:10
+-Putnici:[Putnik[ID:201], Putnik[ID:202], Putnik[ID:203], Putnik[ID:204], Putnik[ID:205], Putnik[ID:206], Putnik[ID:207], Putnik[ID:208], Putnik[ID:209], Putnik[ID:210]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:20]-Broj putnika:1
+-Putnici:[Putnik[ID:61]]
 pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:32]-Broj putnika:4-Putnici:[Putnik[ID:81]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:82]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:83]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:84]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:15]-Broj putnika:1-Putnici:[Putnik[ID:34]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Autobus[ID:2]-Broj putnika:3-Putnici:[Putnik[ID:137]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:138]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:139]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:3]-Broj putnika:3-Putnici:[Putnik[ID:11]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:12]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:13]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Autobus[ID:4]-Broj putnika:26-Putnici:[Putnik[ID:164]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:165]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:166]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:167]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:168]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:169]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:170]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:171]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:172]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:173]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:174]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:175]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:176]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:177]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:178]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:179]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:180]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:181]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:182]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:183]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:184]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:185]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:186]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:187]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:188]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:189]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:9]-Broj putnika:3-Putnici:[Putnik[ID:32]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:33]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:34]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Autobus[ID:2]-Broj putnika:3-Putnici:[Putnik[ID:145]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:146]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:147]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:10]-Broj putnika:5-Putnici:[Putnik[ID:35]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:36]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:37]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:38]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:39]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:26]-Broj putnika:4-Putnici:[Putnik[ID:85]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:86]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:87]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:88]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Autobus[ID:3]-Broj putnika:16-Putnici:[Putnik[ID:148]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:149]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:150]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:151]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:152]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:153]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:154]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:155]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:156]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:157]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:158]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:159]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:160]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:161]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:162]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:163]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:30]-Broj putnika:2-Putnici:[Putnik[ID:97]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:98]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:35]-Broj putnika:1-Putnici:[Putnik[ID:111]-Vozac:true-Nesipravni dokumenti:true-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:13]-Broj putnika:4-Putnici:[Putnik[ID:47]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:48]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:49]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:50]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:4]-Broj putnika:3-Putnici:[Putnik[ID:7]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:8]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:9]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:35]-Broj putnika:5-Putnici:[Putnik[ID:89]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:90]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:91]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:92]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:93]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:10]-Broj putnika:4-Putnici:[Putnik[ID:23]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:24]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:25]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:26]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:5]-Broj putnika:1-Putnici:[Putnik[ID:10]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:34]-Broj putnika:2-Putnici:[Putnik[ID:87]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:88]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:1]-Broj putnika:2-Putnici:[Putnik[ID:1]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:2]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:22]-Broj putnika:1-Putnici:[Putnik[ID:59]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:33]-Broj putnika:2-Putnici:[Putnik[ID:85]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:86]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Autobus[ID:4]-Broj putnika:44-Putnici:[Putnik[ID:148]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:149]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:150]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:151]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:152]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:153]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:154]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:155]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:156]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:157]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:158]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:159]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:160]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:161]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:162]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:163]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:164]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:165]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:166]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:167]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:168]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:169]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:170]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:171]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:172]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:173]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:174]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:175]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:176]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:177]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:178]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:179]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:180]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:181]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:182]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:183]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:184]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:185]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:186]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:187]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:188]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:189]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:190]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:191]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-pv-Problem vozaca sa dokumentacijom.
-Licno vozilo[ID:32]-Broj putnika:5-Putnici:[Putnik[ID:90]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:91]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:92]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:93]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:94]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Licno vozilo[ID:20]
+VOZILO NA TERMINALU
+Licno vozilo[ID:34]-Broj putnika:2
+-Putnici:[Putnik[ID:106], Putnik[ID:107]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:28]-Broj putnika:3
+-Putnici:[Putnik[ID:83], Putnik[ID:84], Putnik[ID:85]]
+VOZILO NA TERMINALU
+Autobus[ID:2]-Broj putnika:51
+-Putnici:[Putnik[ID:150], Putnik[ID:151], Putnik[ID:152], Putnik[ID:153], Putnik[ID:154], Putnik[ID:155], Putnik[ID:156], Putnik[ID:157], Putnik[ID:158], Putnik[ID:159], Putnik[ID:160], Putnik[ID:161], Putnik[ID:162], Putnik[ID:163], Putnik[ID:164], Putnik[ID:165], Putnik[ID:166], Putnik[ID:167], Putnik[ID:168], Putnik[ID:169], Putnik[ID:170], Putnik[ID:171], Putnik[ID:172], Putnik[ID:173], Putnik[ID:174], Putnik[ID:175], Putnik[ID:176], Putnik[ID:177], Putnik[ID:178], Putnik[ID:179], Putnik[ID:180], Putnik[ID:181], Putnik[ID:182], Putnik[ID:183], Putnik[ID:184], Putnik[ID:185], Putnik[ID:186], Putnik[ID:187], Putnik[ID:188], Putnik[ID:189], Putnik[ID:190], Putnik[ID:191], Putnik[ID:192], Putnik[ID:193], Putnik[ID:194], Putnik[ID:195], Putnik[ID:196], Putnik[ID:197], Putnik[ID:198], Putnik[ID:199], Putnik[ID:200]]
+p-Problem putnika sa dokumentacijom.
+Putnik[ID:187]
+VOZILO NA TERMINALU
+Autobus[ID:2]-Broj putnika:51
+-Putnici:[Putnik[ID:150], Putnik[ID:151], Putnik[ID:152], Putnik[ID:153], Putnik[ID:154], Putnik[ID:155], Putnik[ID:156], Putnik[ID:157], Putnik[ID:158], Putnik[ID:159], Putnik[ID:160], Putnik[ID:161], Putnik[ID:162], Putnik[ID:163], Putnik[ID:164], Putnik[ID:165], Putnik[ID:166], Putnik[ID:167], Putnik[ID:168], Putnik[ID:169], Putnik[ID:170], Putnik[ID:171], Putnik[ID:172], Putnik[ID:173], Putnik[ID:174], Putnik[ID:175], Putnik[ID:176], Putnik[ID:177], Putnik[ID:178], Putnik[ID:179], Putnik[ID:180], Putnik[ID:181], Putnik[ID:182], Putnik[ID:183], Putnik[ID:184], Putnik[ID:185], Putnik[ID:186], Putnik[ID:188], Putnik[ID:189], Putnik[ID:190], Putnik[ID:191], Putnik[ID:192], Putnik[ID:193], Putnik[ID:194], Putnik[ID:195], Putnik[ID:196], Putnik[ID:197], Putnik[ID:198], Putnik[ID:199], Putnik[ID:200]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:30]-Broj putnika:1
+-Putnici:[Putnik[ID:91]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:27]-Broj putnika:4
+-Putnici:[Putnik[ID:79], Putnik[ID:80], Putnik[ID:81], Putnik[ID:82]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:6]-Broj putnika:3
+-Putnici:[Putnik[ID:15], Putnik[ID:16], Putnik[ID:17]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:11]-Broj putnika:5
+-Putnici:[Putnik[ID:31], Putnik[ID:32], Putnik[ID:33], Putnik[ID:34], Putnik[ID:35]]
+VOZILO NA TERMINALU
+Autobus[ID:5]-Broj putnika:33
+-Putnici:[Putnik[ID:254], Putnik[ID:255], Putnik[ID:256], Putnik[ID:257], Putnik[ID:258], Putnik[ID:259], Putnik[ID:260], Putnik[ID:261], Putnik[ID:262], Putnik[ID:263], Putnik[ID:264], Putnik[ID:265], Putnik[ID:266], Putnik[ID:267], Putnik[ID:268], Putnik[ID:269], Putnik[ID:270], Putnik[ID:271], Putnik[ID:272], Putnik[ID:273], Putnik[ID:274], Putnik[ID:275], Putnik[ID:276], Putnik[ID:277], Putnik[ID:278], Putnik[ID:279], Putnik[ID:280], Putnik[ID:281], Putnik[ID:282], Putnik[ID:283], Putnik[ID:284], Putnik[ID:285], Putnik[ID:286]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:35]-Broj putnika:1
+-Putnici:[Putnik[ID:108]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:22]-Broj putnika:2
+-Putnici:[Putnik[ID:67], Putnik[ID:68]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:13]-Broj putnika:2
+-Putnici:[Putnik[ID:39], Putnik[ID:40]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:13]-Broj putnika:2
+-Putnici:[Putnik[ID:39], Putnik[ID:40]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:26]-Broj putnika:2
+-Putnici:[Putnik[ID:77], Putnik[ID:78]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:3]-Broj putnika:2
+-Putnici:[Putnik[ID:7], Putnik[ID:8]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:2]-Broj putnika:2
+-Putnici:[Putnik[ID:5], Putnik[ID:6]]
+VOZILO NA TERMINALU
+Licno vozilo[ID:4]-Broj putnika:1
+-Putnici:[Putnik[ID:9]]

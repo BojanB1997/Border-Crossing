@@ -1,0 +1,32 @@
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Licno vozilo[ID:21]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:123]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:139]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:149]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:226]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:231]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:233]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:247]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:205]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:98]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:85]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:161]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:167]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:176]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:196]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:256]

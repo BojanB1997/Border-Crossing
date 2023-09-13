@@ -1,0 +1,16 @@
+m-Stvarna masa je razlicita od deklarisane.
+Kamion[ID:10]
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Kamion[ID:10]
+m-Stvarna masa je razlicita od deklarisane.
+Kamion[ID:7]
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Kamion[ID:7]
+m-Stvarna masa je razlicita od deklarisane.
+Kamion[ID:6]
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Kamion[ID:6]
+m-Stvarna masa je razlicita od deklarisane.
+Kamion[ID:3]
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Kamion[ID:3]

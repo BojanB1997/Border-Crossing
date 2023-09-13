@@ -1,0 +1,81 @@
+Sep 12, 2023 5:15:34 PM Aplikacija.MojLogger log
+SEVERE: Neuspjesna deserijalizacija
+java.io.FileNotFoundException: C:\Users\DT User6\Desktop\Border-Crossing\src\Serijalizacija\12.09.2023 05_15_25 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+	at Aplikacija.Simulacija.run(Simulacija.java:195)
+
+Sep 12, 2023 5:55:38 PM Aplikacija.MojLogger log
+SEVERE: Neuspjesna deserijalizacija
+java.io.FileNotFoundException: C:\Users\DT User6\Desktop\Border-Crossing\src\Serijalizacija\12.09.2023 05_55_20 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+	at Aplikacija.Simulacija.run(Simulacija.java:198)
+
+Sep 12, 2023 5:57:23 PM Aplikacija.MojLogger log
+SEVERE: Neuspjesna deserijalizacija
+java.io.FileNotFoundException: C:\Users\DT User6\Desktop\Border-Crossing\src\Serijalizacija\12.09.2023 05_57_05 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+	at Aplikacija.Simulacija.run(Simulacija.java:198)
+
+Sep 12, 2023 6:01:07 PM Aplikacija.MojLogger log
+SEVERE: Neuspjesna deserijalizacija
+java.io.FileNotFoundException: C:\Users\DT User6\Desktop\Border-Crossing\src\Serijalizacija\12.09.2023 06_01_03 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+	at Aplikacija.Simulacija.run(Simulacija.java:198)
+
+Sep 12, 2023 6:01:53 PM Aplikacija.MojLogger log
+SEVERE: Neuspjesna deserijalizacija
+java.io.FileNotFoundException: C:\Users\DT User6\Desktop\Border-Crossing\src\Serijalizacija\12.09.2023 06_01_49 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+	at Aplikacija.Simulacija.run(Simulacija.java:198)
+
+Sep 12, 2023 6:03:04 PM Aplikacija.MojLogger log
+SEVERE: Neuspjesna deserijalizacija
+java.io.FileNotFoundException: C:\Users\DT User6\Desktop\Border-Crossing\src\Serijalizacija\12.09.2023 06_02_45 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+	at Aplikacija.Simulacija.run(Simulacija.java:198)
+
+Sep 12, 2023 6:03:43 PM Aplikacija.MojLogger log
+SEVERE: Neuspjesna deserijalizacija
+java.io.FileNotFoundException: C:\Users\DT User6\Desktop\Border-Crossing\src\Serijalizacija\12.09.2023 06_03_25 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+	at Aplikacija.Simulacija.run(Simulacija.java:198)
+
+Sep 12, 2023 6:04:27 PM Aplikacija.MojLogger log
+SEVERE: Neuspjesna deserijalizacija
+java.io.FileNotFoundException: C:\Users\DT User6\Desktop\Border-Crossing\src\Serijalizacija\12.09.2023 06_04_08 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+	at Aplikacija.Simulacija.run(Simulacija.java:198)
+
+Sep 13, 2023 12:41:18 PM Aplikacija.MojLogger log
+SEVERE: Neuspjesna deserijalizacija
+java.io.FileNotFoundException: C:\Users\DT User6\Desktop\Border-Crossing\src\Serijalizacija\13.09.2023 12_35_23 (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:108)
+	at Aplikacija.Simulacija.run(Simulacija.java:199)
+

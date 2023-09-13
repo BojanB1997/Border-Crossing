@@ -1,4 +1,16 @@
-pv-Problem vozaca sa dokumentima.
-Kamion[ID:10]-Broj putnika:3-Deklarisana masa:9.982136-Stvarna masa:0.0-Putnici:[Putnik[ID:237]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:true, Putnik[ID:238]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:239]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-p-Problem putnika sa dokumentima.
-Putnik[ID:235]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:true
+VOZILO NA TERMINALU
+Kamion[ID:1]-Broj putnika:1-Deklarisana masa:7.1885843-Stvarna masa:4.0636396
+-Putnici:[Putnik[ID:247]]
+-Potrebna carinska dokumentacija:true-Ima dokumentaciju:false
+VOZILO NA TERMINALU
+Kamion[ID:9]-Broj putnika:2-Deklarisana masa:5.243541-Stvarna masa:4.0931587
+-Putnici:[Putnik[ID:264], Putnik[ID:265]]
+-Potrebna carinska dokumentacija:true-Ima dokumentaciju:false
+VOZILO NA TERMINALU
+Kamion[ID:8]-Broj putnika:3-Deklarisana masa:10.545195-Stvarna masa:9.252489
+-Putnici:[Putnik[ID:261], Putnik[ID:262], Putnik[ID:263]]
+-Potrebna carinska dokumentacija:true-Ima dokumentaciju:false
+VOZILO NA TERMINALU
+Kamion[ID:3]-Broj putnika:3-Deklarisana masa:10.0613575-Stvarna masa:10.278206
+-Putnici:[Putnik[ID:251], Putnik[ID:252], Putnik[ID:253]]
+-Potrebna carinska dokumentacija:true-Ima dokumentaciju:false
