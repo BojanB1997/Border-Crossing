@@ -19,7 +19,8 @@ public class Autobus extends Vozilo{
         this.setOznaka("A");
         this.setBoja("cadetblue");
         for(int i = 0; i < brojPutnika; i++){
-            this.listaPutnika.add(new Putnik());
+            this.listaPutnika.add(new Putnik(putnikId));
+            putnikId++;
         }
         this.listaPutnika.get(0).setJeVozac(true);
     }
@@ -29,7 +30,16 @@ public class Autobus extends Vozilo{
     }
 
     @Override
-    public String toString(){
+    public Integer vrijemeCekanjaNaCarini(){
+        return this.brojPutnika*this.getVrijemeProcesuiranja();
+    }
+
+    @Override
+    public String upisiVoziloUFajl(){
         return "Autobus[ID:" + getaId() + "]-Broj putnika:" + brojPutnika + "-Putnici:" + listaPutnika;
+    }
+    @Override
+    public String toString(){
+        return "Autobus[ID:" + getaId() + "]";
     }
 }
