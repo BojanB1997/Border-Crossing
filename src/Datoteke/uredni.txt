@@ -1,58 +1,22 @@
 u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:28]-Broj putnika:2-Putnici:[Putnik[ID:73]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:74]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Licno vozilo[ID:8]
 u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:33]-Broj putnika:2-Putnici:[Putnik[ID:85]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:86]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Licno vozilo[ID:23]
 u-Vozilo je uredno preslo granicu.
-Kamion[ID:5]-Broj putnika:3-Deklarisana masa:8.869348-Stvarna masa:0.8922628-Putnici:[Putnik[ID:223]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:224]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:225]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:47]
 u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:23]-Broj putnika:3-Putnici:[Putnik[ID:75]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:77]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Licno vozilo[ID:28]
 u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:14]-Broj putnika:2-Putnici:[Putnik[ID:51]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:52]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Licno vozilo[ID:29]
 u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:29]-Broj putnika:4-Putnici:[Putnik[ID:93]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:94]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:95]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:96]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Licno vozilo[ID:24]
 u-Vozilo je uredno preslo granicu.
-Kamion[ID:9]-Broj putnika:3-Deklarisana masa:8.018058-Stvarna masa:0.0-Putnici:[Putnik[ID:234]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:236]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Licno vozilo[ID:35]
 u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:22]-Broj putnika:5-Putnici:[Putnik[ID:70]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:71]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:72]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:73]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:74]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Licno vozilo[ID:6]
 u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:17]-Broj putnika:2-Putnici:[Putnik[ID:57]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:58]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Licno vozilo[ID:11]
 u-Vozilo je uredno preslo granicu.
-Kamion[ID:4]-Broj putnika:2-Deklarisana masa:8.094467-Stvarna masa:0.0-Putnici:[Putnik[ID:221]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:222]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Kamion[ID:46]
 u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:27]-Broj putnika:1-Putnici:[Putnik[ID:89]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Kamion[ID:3]-Broj putnika:2-Deklarisana masa:8.787357-Stvarna masa:0.0-Putnici:[Putnik[ID:219]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:220]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:7]-Broj putnika:3-Putnici:[Putnik[ID:25]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:26]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:27]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:9]-Broj putnika:1-Putnici:[Putnik[ID:22]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Kamion[ID:8]-Broj putnika:1-Deklarisana masa:7.971074-Stvarna masa:0.0-Putnici:[Putnik[ID:224]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:23]-Broj putnika:2-Putnici:[Putnik[ID:60]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:61]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Kamion[ID:4]-Broj putnika:3-Deklarisana masa:9.149015-Stvarna masa:0.0-Putnici:[Putnik[ID:216]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:217]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:218]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Kamion[ID:7]-Broj putnika:1-Deklarisana masa:11.063912-Stvarna masa:0.0-Putnici:[Putnik[ID:223]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Kamion[ID:5]-Broj putnika:2-Deklarisana masa:5.5251746-Stvarna masa:0.0-Putnici:[Putnik[ID:219]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:220]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Kamion[ID:1]-Broj putnika:2-Deklarisana masa:9.317536-Stvarna masa:0.0-Putnici:[Putnik[ID:210]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:211]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Autobus[ID:2]-Broj putnika:19-Putnici:[Putnik[ID:95]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:96]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:97]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:98]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:99]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:100]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:101]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:102]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:103]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:104]-Vozac:false-Nesipravni dokumenti:true-Nedopustene stvari:false, Putnik[ID:105]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:106]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:107]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:108]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:109]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:110]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:111]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:112]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:113]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Kamion[ID:3]-Broj putnika:2-Deklarisana masa:7.887002-Stvarna masa:0.0-Putnici:[Putnik[ID:214]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:215]-Vozac:false-Nesipravni dokumenti:true-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:30]-Broj putnika:2-Putnici:[Putnik[ID:77]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:78]-Vozac:false-Nesipravni dokumenti:true-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:8]-Broj putnika:3-Putnici:[Putnik[ID:19]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:20]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:21]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:11]-Broj putnika:2-Putnici:[Putnik[ID:27]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:28]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:3]-Broj putnika:2-Putnici:[Putnik[ID:9]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:10]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Kamion[ID:1]-Broj putnika:3-Deklarisana masa:7.673622-Stvarna masa:0.0-Putnici:[Putnik[ID:253]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:254]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:255]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Licno vozilo[ID:16]-Broj putnika:3-Putnici:[Putnik[ID:45]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:46]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false, Putnik[ID:47]-Vozac:false-Nesipravni dokumenti:false-Nedopustene stvari:false]
-u-Vozilo je uredno preslo granicu.
-Kamion[ID:6]-Broj putnika:1-Deklarisana masa:9.2059555-Stvarna masa:0.0-Putnici:[Putnik[ID:264]-Vozac:true-Nesipravni dokumenti:false-Nedopustene stvari:false]
+Licno vozilo[ID:32]
