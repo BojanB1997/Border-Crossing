@@ -1,0 +1,6 @@
+m-Stvarna masa je razlicita od deklarisane.
+Kamion[ID:43]
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Kamion[ID:43]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:236]

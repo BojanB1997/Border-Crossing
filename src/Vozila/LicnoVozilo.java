@@ -9,8 +9,8 @@ public class LicnoVozilo extends Vozilo{
     Integer brojPutnika;
     Random random = new Random();
 
-    public LicnoVozilo(Object[][] mapa){
-        super(mapa);
+    public LicnoVozilo(Object[][] mapa, Integer id){
+        super(mapa, id);
         this.lVid = nextId;
         nextId++;
         brojPutnika = random.nextInt(5) + 1;
@@ -19,7 +19,8 @@ public class LicnoVozilo extends Vozilo{
         this.setOznaka("LV");
         this.setBoja("tomato");
         for(int i = 0; i < brojPutnika; i++){
-            this.listaPutnika.add(new Putnik());
+            this.listaPutnika.add(new Putnik(putnikId));
+            putnikId++;
         }
         this.listaPutnika.get(0).setJeVozac(true);
     }
@@ -30,7 +31,17 @@ public class LicnoVozilo extends Vozilo{
     }
 
     @Override
+    public Integer vrijemeCekanjaNaCarini(){
+        return 2000 + this.brojPutnika*this.getVrijemeProcesuiranja();
+    }
+
+    @Override
+    public String upisiVoziloUFajl(){
+        return "Licno vozilo[ID:" + getIdd() + "]-Broj putnika:" + brojPutnika + "-Putnici:" + listaPutnika;
+    }
+
+    @Override
     public String toString(){
-        return "Licno vozilo[ID:" + getLVId() + "]-Broj putnika:" + brojPutnika + "-Putnici:" + listaPutnika;
+        return "Licno vozilo[ID:" + getIdd() + "]";
     }
 }

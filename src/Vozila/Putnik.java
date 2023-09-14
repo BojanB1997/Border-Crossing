@@ -1,21 +1,22 @@
 package Vozila;
 
+import java.io.Serializable;
 import java.util.Random;
 
-public class Putnik {
+public class Putnik implements Serializable {
 
     private Integer id;
-    private static Integer nextId = 1;
     private Boolean jeVozac = false;
     private Boolean imaKofer = false;
     private Boolean nedozvoljeneStvari = false;
     private Boolean neispravniDokumenti = false;
     private Boolean presaoGranicu;
+    private Boolean obradjenNaPT = false;
+    private Boolean obradjenNaCT = false;
 
-    public Putnik()
+    public Putnik(Integer iD)
     {
-        this.id = nextId;
-        nextId++;
+        this.id = iD;
         setImaKofer(isVjerovatnoca(70));
         if(getImaKofer()){
             setNedozvoljeneStvari(isVjerovatnoca(10));
@@ -55,6 +56,22 @@ public class Putnik {
         return jeVozac;
     }
 
+    public void setObradjenNaCT(Boolean obradjenNaCT) {
+        this.obradjenNaCT = obradjenNaCT;
+    }
+
+    public Boolean getObradjenNaCT() {
+        return obradjenNaCT;
+    }
+
+    public void setObradjenNaPT(Boolean obradjenNaPT) {
+        this.obradjenNaPT = obradjenNaPT;
+    }
+
+    public Boolean getObradjenNaPT() {
+        return obradjenNaPT;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -78,9 +95,13 @@ public class Putnik {
         }
     }
 
+    public String upisiPutnikaUFajl(){
+        return "Putnik[ID:" + getId() + "]-Vozac:" + jeVozac + "-Ima kofer:" + getImaKofer() + "-Nesipravni dokumenti:" + neispravniDokumenti +
+                "-Nedopustene stvari:" + nedozvoljeneStvari;
+    }
+
     @Override
     public String toString(){
-        return "Putnik[ID:" + getId() + "]-Vozac:" + jeVozac + "-Nesipravni dokumenti:" + neispravniDokumenti +
-                "-Nedopustene stvari:" + nedozvoljeneStvari;
+        return "Putnik[ID:" + getId() + "]";
     }
 }

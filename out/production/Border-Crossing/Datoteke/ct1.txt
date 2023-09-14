@@ -1,0 +1,10 @@
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:85]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:55]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:104]
+k-Putnik je imao nedozvoljene stvari u koferu.
+Putnik[ID:33]
+kv-Vozac je imao nedozvoljene stvari u koferu.
+Licno vozilo[ID:11]

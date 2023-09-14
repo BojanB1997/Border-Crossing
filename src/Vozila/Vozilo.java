@@ -1,21 +1,40 @@
 package Vozila;
 
+import Aplikacija.MojLogger;
+
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.logging.Level;
 
-public class Vozilo extends Thread {
+import static Aplikacija.Pomjerac.sinhro;
+import static Aplikacija.Main.pauza;
+import static Aplikacija.Main.pokrenut;
+
+public abstract class Vozilo extends Thread {
     private Integer brojPutnika;
     private Integer pozicijaURedu;
     private Integer vrijemeProcesuiranja;
     private String oznaka;
     private String boja;
+    private Integer id;
     public Object[][] mapa;
     public Boolean kreceSe = true;
     public ArrayList<Putnik> listaPutnika = new ArrayList<Putnik>();
+    public static Integer putnikId = 0;
+    public ArrayList<Integer> listaPozicija = new ArrayList<>();
 
-    public Vozilo(Object[][] mapa) {
+    public Vozilo(Object[][] mapa, Integer id) {
         super();
         this.mapa = mapa;
+        this.id = id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getIdd() {
+        return id;
     }
 
     public void setBrojPutnika(Integer brojPutnika) {
@@ -68,32 +87,48 @@ public class Vozilo extends Thread {
         return boja;
     }
 
-    public float getDeklarisanaMasa()
-    {
+    public Integer vrijemeCekanjaNaCarini() {
         return 0;
     }
 
-    public float getStvarnaMasa(){
-        return 0;
+    public String upisiVoziloUFajl(){
+        return null;
     }
 
     @Override
     public void run() {
 
         while (kreceSe) {
+            synchronized (pauza){
+                if(!pokrenut){
+                    try{
+                        pauza.wait();
+                    }catch(Exception e){
+                        MojLogger.log(Level.SEVERE, "Pauza u vozilu.", e);
+                    }
+                }
+            }
             if (getPozicijaURedu() < 49) {
-                synchronized (mapa) {
-                    if (mapa[2][getPozicijaURedu() + 1] == null) {
-                        mapa[2][getPozicijaURedu() + 1] = getOznaka();
-                        mapa[2][getPozicijaURedu()] = null;
-                        setPozicijaURedu(getPozicijaURedu() + 1);
+                synchronized (sinhro) {
+                    synchronized (mapa) {
+                        if (mapa[2][getPozicijaURedu() + 1] == null) {
+                            mapa[2][getPozicijaURedu() + 1] = this;
+                            mapa[2][getPozicijaURedu()] = null;
+                            setPozicijaURedu(getPozicijaURedu() + 1);
+                            listaPozicija.add(getPozicijaURedu());
+//                            try {
+//                                sleep(10);
+//                            } catch (InterruptedException e) {
+//                                MojLogger.log(Level.SEVERE, "Spava u kretanju u redu.", e);
+//                            }
+                        }
                     }
                 }
             }
             try {
-                sleep(40);
+                sleep(100);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                MojLogger.log(Level.SEVERE, "Uspavljivanje u klasi Vozilo.", e);
             }
         }
     }
